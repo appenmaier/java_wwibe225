@@ -1,6 +1,6 @@
 # Demos WWIBE225
 
-Dieses Repo beinhaltet alle Demos des Kurses WWIBE225 sowie das Skript zur Vorlesung [Programmieren mit Java](https://jappuccini.github.io/java-docs/production/). Das Arbeiten mit diesem Repo wird [hier](https://jappuccini.github.io/java-docs/production/additional-material/daniel/instructions/git) beschrieben.
+Dieses Repo beinhaltet alle Demos des Kurses WWIBE225 zur Vorlesung [Programmieren mit Java](https://jappuccini.github.io/java-docs/production/). Das Arbeiten mit diesem Repo wird [hier](https://jappuccini.github.io/java-docs/production/additional-material/daniel/instructions/git) beschrieben.
 
 ## Skript Programmierung I
 
@@ -14,3 +14,21 @@ Dieses Repo beinhaltet alle Demos des Kurses WWIBE225 sowie das Skript zur Vorle
 - [Vorlesung 8, 26.02.2026: Klassendiagramme, Aktivitätsdiagramme, Vererbung, (Dynamische) Polymorphie](skript/java1/lecture08.md)
 - [Vorlesung 9, 03.03.2026: Die Mutter aller Klassen, Abstrakte und finale Klassen und Methoden, Schnittstellen (Interfaces)](skript/java1/lecture09.md)
 - [Vorlesung 10, 12.03.2026: Klausurvorbereitung](skript/java1/lecture10.md)
+
+## Gestaltungsprinzipien
+
+| Abkürzung | Bedeutung |
+| --------- | --------- |
+|           |           |
+
+## Wichtige Klassen und Methoden
+
+| Klasse | Methode |
+| ------ | ------- |
+|        |         |
+
+## Wichtige Begriffe
+
+| Begriff | Bedeutung |
+| ------- | --------- |
+|         |           |
