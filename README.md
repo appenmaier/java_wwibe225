@@ -4,6 +4,7 @@ Dieses Repo beinhaltet alle Demos des Kurses WWIBE225 zur Vorlesung [Programmier
 
 ## Skript Programmierung I
 
+- [Exkurs: Darstellung von Zahlen im Computer](skript/java1/excursion.md)
 - [Vorlesung 1, 27.01.2026: Einführung](skript/java1/lecture01.md)
 - [Vorlesung 2, 03.02.2026: Aufbau einer Klasse, Datentypen, Datenobjekte](skript/java1/lecture02.md)
 - [Vorlesung 3, 05.02.2026: Zeichenketten (Strings), Operatoren, Mathematische Berechnungen, Pseudozufallszahlen, Konsolenanwendungen](skript/java1/lecture03.md)
