@@ -1,24 +1,12 @@
 # Vorlesung 8, 26.02.2026
 
-## Klassendiagramme
+## Klassendiagramme und Aktivitätsdiagramme
 
 ### Abbildungen
 
 ### Links
 
-## Aktivitätsdiagramme
-
-### Abbildungen
-
-### Links
-
-## Vererbung
-
-### Abbildungen
-
-### Links
-
-## (Dynamische) Polymorphie
+## Vererbung und (Dynamische) Polymorphie
 
 ### Abbildungen
 
