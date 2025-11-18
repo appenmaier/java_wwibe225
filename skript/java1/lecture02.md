@@ -1,18 +1,30 @@
 # Vorlesung 2, 03.02.2026
 
-## Aufbau einer Klasse
+## Grundlegende Syntax
 
 ### Abbildungen
 
 ### Links
 
-## Datentypen
+## Statische Methoden
+
+### Abbildungen
+
+### Links
+
+## Primitive Datentypen
 
 ### Abbildungen
 
 ### Links
 
 ## Datenobjekte
+
+### Abbildungen
+
+### Links
+
+## Typumwandlungen
 
 ### Abbildungen
 
