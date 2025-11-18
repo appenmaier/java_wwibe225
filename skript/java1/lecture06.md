@@ -1,18 +1,48 @@
 # Vorlesung 6, 19.02.2026
 
-## Objektorientierte Programmierung
-
-### Abbildungen
-
-### Links
-
 ## Klassen
 
 ### Abbildungen
 
 ### Links
 
-## Referenzen und Objekte
+## Attribute
+
+### Abbildungen
+
+### Links
+
+## Methoden
+
+### Abbildungen
+
+### Links
+
+## Objekte
+
+### Abbildungen
+
+### Links
+
+## ArrayLists
+
+### Abbildungen
+
+### Links
+
+## Datenkapselung
+
+### Abbildungen
+
+### Links
+
+## Konstruktoren und überladene Methoden
+
+### Abbildungen
+
+### Links
+
+## String toString()
 
 ### Abbildungen
 
