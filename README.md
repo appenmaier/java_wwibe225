@@ -19,7 +19,7 @@ Dieses Repo beinhaltet alle Demos des Kurses WWIBE225 zur Vorlesung [Programmier
 **Objektorientierte Programmierung**
 - [Vorlesung 6, 19.02.2026: Klassen, Attribute, Methoden, Objekte, ArrayLists, Datenkapselung, Konstruktoren und überladene Methoden, String toString()](skript/java1/lecture06.md)
 - [Vorlesung 7, 24.02.2026: Statische und nichtstatische Elemente, For-Each-Schleife, Die Java API, Lesen von Dateien, Aufzählungen (Enumerations)](skript/java1/lecture07.md)
-- [Vorlesung 8, 26.02.2026: Klassendiagramme und Aktivitätsdiagramme, Vererbung](skript/java1/lecture08.md)
+- [Vorlesung 8, 26.02.2026: Klassendiagramme und Aktivitätsdiagramme, Vererbung und (Dynamische) Polymorphie](skript/java1/lecture08.md)
 - [Vorlesung 9, 03.03.2026: Die Mutter aller Klassen, Abstrakte und finale Klassen und Methoden, Schnittstellen (Interfaces), Listen](skript/java1/lecture09.md)
 
 **Klausurvorbereitung**
