@@ -6,7 +6,31 @@
 
 ### Links
 
+## Vergleich von Zeichenketten
+
+### Abbildungen
+
+### Links
+
+## Bedingte Zuweisungen
+
+### Abbildungen
+
+### Links
+
+## Fallunterscheidungen
+
+### Abbildungen
+
+### Links
+
 ## Schleifen
+
+### Abbildungen
+
+### Links
+
+## Schleifensteuerung
 
 ### Abbildungen
 
