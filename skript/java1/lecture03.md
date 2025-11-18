@@ -6,25 +6,25 @@
 
 ### Links
 
-## Operatoren
+## Mathematische Operatoren
 
 ### Abbildungen
 
 ### Links
 
-## Mathematische Berechnungen
+## Mathematische Berechnungen und Pseudozufallszahlen
 
 ### Abbildungen
 
 ### Links
 
-## Pseudozufallszahlen
+## Konsoleneingaben
 
 ### Abbildungen
 
 ### Links
 
-## Konsolenanwendungen
+## Konsolenausgaben
 
 ### Abbildungen
 
