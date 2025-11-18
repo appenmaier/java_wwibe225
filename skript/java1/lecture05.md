@@ -6,7 +6,19 @@
 
 ### Links
 
-## Feldbasierte Listen (ArrayLists)
+## String[] args
+
+### Abbildungen
+
+### Links
+
+## Variable Argumentlisten
+
+### Abbildungen
+
+### Links
+
+## Multidimensionale Felder
 
 ### Abbildungen
 

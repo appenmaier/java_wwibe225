@@ -1,24 +1,24 @@
 # Vorlesung 7, 24.02.2026
 
+## Statische und nichtstatische Elemente
+
+### Abbildungen
+
+### Links
+
+## For-Each-Schleife
+
+### Abbildungen
+
+### Links
+
 ## Die Java API
 
 ### Abbildungen
 
 ### Links
 
-## Wrapper-Klassen
-
-### Abbildungen
-
-### Links
-
-## Datums- und Zeitangaben
-
-### Abbildungen
-
-### Links
-
-## Dateien und Verzeichnisse
+## Lesen von Dateien
 
 ### Abbildungen
 
