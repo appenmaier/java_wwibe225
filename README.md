@@ -40,6 +40,6 @@ Dieses Repo beinhaltet alle Demos des Kurses WWIBE225 zur Vorlesung [Programmier
 
 ## Beispielhafte Klasse
 
-```java showLineNumers
+```java
 
 ```
