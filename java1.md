@@ -4,9 +4,9 @@
 
 - Termin 1, 27.01.2026
   - [Programmieren](skript/java1/coding.md)
-  - Programmausführung
-  - Git
+  - [Programmausführung](skript/java1/execution.md)
 - Termin 2, 03.02.2026
+  - Git
   - Grundlegende Syntax
   - Statische Methoden
   - Binärzahlen, Primitive Datentypen, Datenobjekte und Typumwandlungen
