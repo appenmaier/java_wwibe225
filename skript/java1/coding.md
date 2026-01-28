@@ -21,3 +21,4 @@
 
 - [Doku: Programmieren](https://jappuccini.github.io/java-docs/production/documentation/coding)
 - [Doku: Die Programmiersprache Java](https://jappuccini.github.io/java-docs/production/documentation/java)
+- [Übungsaufgaben: Programmieren](https://jappuccini.github.io/java-docs/production/exercises/coding/)
