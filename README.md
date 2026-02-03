@@ -22,8 +22,27 @@ Dieses Repo beinhaltet sämtlichen Quellcode zu allen Demos sowie alle relevante
 
 **Wichtige Klassen und Methoden**
 
-_folgt_
+| Klasse | Methode |
+| ------ | ------- |
+| PrintStream | print, println |
 
 **Beispielhafte Klasse**
 
-_folgt_
+```java
+public class MainClass {
+
+   public static void main(String[] args) {
+
+   }
+
+}
+```
+
+**Schreibweisen**
+
+| Schreibweise | Beispiel | Einsatzgebiet in Java |
+| ------------ | -------- | --------------------- |
+| Pascal Case | `MainClass` | Klassen |
+| Camel Case | `firstName`, `getFirstName()` | Datenobjekte und Methoden |
+| Snake Case | `FILE_NAME` | Konstanten |
+| Kebab Case | `font-family` | CSS-Eigenschaften bei JavaFX |
