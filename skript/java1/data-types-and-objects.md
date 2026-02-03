@@ -1,4 +1,4 @@
-# Datentypen und Datenobjekte
+# Binärzahlen, Primitive Datentypen, Datenobjekte und Typumwandlungen
 
 **Abbildungen**
 
