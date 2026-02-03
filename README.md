@@ -18,7 +18,7 @@ Dieses Repo beinhaltet sämtlichen Quellcode zu allen Demos sowie alle relevante
 
 **Gestaltungsprinzipien**
 
-_folgt_
+- DRY: Don`t Repeat Yourself
 
 **Wichtige Klassen und Methoden**
 
