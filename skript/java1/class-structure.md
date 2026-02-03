@@ -8,5 +8,5 @@
 **Links**
 
 - [Doku: Aufbau einer Java-Klasse](https://jappuccini.github.io/java-docs/production/documentation/class-structure)
-- [Demo: Allgemeine Sytnax](src/main/java/main/D01_HelloWorld.java)
-- [Demo: Statische Methoden](src/main/java/main/D02_StaticMethods.java)
+- [Demo: Allgemeine Sytnax](../../src/main/java/main/D01_HelloWorld.java)
+- [Demo: Statische Methoden](../../src/main/java/main/D02_StaticMethods.java)
