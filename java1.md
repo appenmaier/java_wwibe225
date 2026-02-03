@@ -8,7 +8,7 @@
 - Termin 2, 03.02.2026
   - [Git](skript/java1/git.md)
   - [Aufbau einer Klasse und statische Methoden](skript/java1/class-structure.md)
-  - Binärzahlen, Primitive Datentypen, Datenobjekte und Typumwandlungen
+  - [Binärzahlen, Primitive Datentypen, Datenobjekte und Typumwandlungen](skript/java1/data-types-and-objects.md)
 - Termin 3, 05.02.2026
   - Zeichenketten (Strings)
   - Mathematische Operatoren Mathematische, Berechnungen und Pseudozufallszahlen
