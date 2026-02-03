@@ -7,4 +7,4 @@
 **Links**
 
 - [Doku: Programmieren](https://jappuccini.github.io/java-docs/production/documentation/coding)
-- [Demo: HelloWorld](../../src/main/java/main/D01_HelloWorld.java)
+- [Demo 1: HelloWorld](../../src/main/java/main/D01_HelloWorld.java)
