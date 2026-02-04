@@ -18,7 +18,9 @@ Dieses Repo beinhaltet sämtlichen Quellcode zu allen Demos sowie alle relevante
 
 **Gestaltungsprinzipien**
 
-- DRY: Don`t Repeat Yourself
+| Abkürzung | Bedeutung |
+| --------- | --------- |
+| DRY | Don`t Repeat Yourself |
 
 **Wichtige Klassen und Methoden**
 
