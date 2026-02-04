@@ -18,7 +18,9 @@ Dieses Repo beinhaltet sämtlichen Quellcode zu allen Demos sowie alle relevante
 
 **Gestaltungsprinzipien**
 
-- DRY: Don`t Repeat Yourself
+| Abkürzung | Bedeutung |
+| --------- | --------- |
+| DRY | Don`t Repeat Yourself |
 
 **Wichtige Klassen und Methoden**
 
@@ -32,7 +34,17 @@ Dieses Repo beinhaltet sämtlichen Quellcode zu allen Demos sowie alle relevante
 public class MainClass {
 
    public static void main(String[] args) {
+      String name;
+      int age;
+      char gender;
+      String hobbies;
 
+      name = "Hans";
+      age = 32;
+      gender = 'm';
+      hobbies = "Zocken, Lesen";
+
+      System.out.println("name=" + name + ", age=" + age + ", gender=" + gender + ", hobbies=" + hobbies);
    }
 
 }
