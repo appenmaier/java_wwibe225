@@ -11,7 +11,7 @@
   - [Binärzahlen, Primitive Datentypen, Datenobjekte und Typumwandlungen](skript/java1/data-types-and-objects.md)
 - Termin 3, 05.02.2026
   - [Zeichenketten (Strings)](skript/java1/strings.md)
-  - Mathematische Operatoren Mathematische, Berechnungen und Pseudozufallszahlen
+  - [Mathematische Operatoren, Mathematische Berechnungen und Pseudozufallszahlen](skript/java1/calculations.md)
   - Konsoleneingaben und Konsolenausgaben
 - Termin 4, 10.02.2026
   - Verzweigungen, Vergleich von Zeichenketten, Bedingte Zuweisungen und Fallunterscheidungen
