@@ -27,6 +27,7 @@ Dieses Repo beinhaltet sämtlichen Quellcode zu allen Demos sowie alle relevante
 | Klasse | Methode |
 | ------ | ------- |
 | PrintStream | print, println |
+| String | charAt, length |
 
 **Beispielhafte Klasse**
 
