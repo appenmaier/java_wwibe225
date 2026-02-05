@@ -18,6 +18,7 @@
 - [Doku: Datenobjekte](https://jappuccini.github.io/java-docs/production/documentation/data-objects)
 - [Demo 3: Datentypen](../../src/main/java/main/D03_PrimitiveDataTypes.java)
 - [Demo 4: Datenobjekte](../../src/main/java/main/D04_DataObjects.java)
+- [Demo 5: Typumwandlungen](../../src/main/java/main/D05_TypeCasting.java)
 - [Übungsaufgaben: Aufbau einer Java-Klasse](https://jappuccini.github.io/java-docs/production/exercises/class-structure/)
 - [Übungsaufgaben: Binärzahlen](https://jappuccini.github.io/java-docs/production/exercises/binary-numbers/)
 - [Übungsaufgaben: Datenobjekte](https://jappuccini.github.io/java-docs/production/exercises/data-objects/)
