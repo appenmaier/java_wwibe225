@@ -26,6 +26,8 @@ public class D04_DataObjects {
       sizeInM = 1.79;
       isMale = true;
 
+      String fullName = "Daniel Appenmaier";
+
       /* Ausgabe */
       System.out.println("age: " + age);
       System.out.println("firstName: " + firstName);
@@ -41,6 +43,18 @@ public class D04_DataObjects {
       /* Unveränderliche Datenobjekte */
       final String text = "Java";
       // text = "Python";
+
+      /* Sichtbarkeit von Datenobjekten */
+      // i = 8;
+      // x = 7;
+      System.out.println(PI);
+   }
+
+   public static void doSomething(int x) {
+      int i = 5;
+      x = 7;
+      System.out.println(i);
+      System.out.println(PI);
    }
 
 }
