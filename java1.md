@@ -10,7 +10,7 @@
   - [Aufbau einer Klasse und statische Methoden](skript/java1/class-structure.md)
   - [Binärzahlen, Primitive Datentypen, Datenobjekte und Typumwandlungen](skript/java1/data-types-and-objects.md)
 - Termin 3, 05.02.2026
-  - Zeichenketten (Strings)
+  - [Zeichenketten (Strings)](skript/java1/strings.md)
   - Mathematische Operatoren Mathematische, Berechnungen und Pseudozufallszahlen
   - Konsoleneingaben und Konsolenausgaben
 - Termin 4, 10.02.2026
