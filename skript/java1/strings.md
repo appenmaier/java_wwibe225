@@ -7,4 +7,4 @@
 **Links**
 
 - [Doku: Zeichenketten (Strings](https://jappuccini.github.io/java-docs/production/documentation/strings)
-- [Demo: Zeichenketten (Strings)](../../src/main/java/main/D06_Strings.java)
+- [Demo 6: Zeichenketten (Strings)](../../src/main/java/main/D06_Strings.java)
