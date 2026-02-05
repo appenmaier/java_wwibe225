@@ -12,7 +12,7 @@
 - Termin 3, 05.02.2026
   - [Zeichenketten (Strings)](skript/java1/strings.md)
   - [Mathematische Operatoren, Mathematische Berechnungen und Pseudozufallszahlen](skript/java1/calculations.md)
-  - Konsoleneingaben und Konsolenausgaben
+  - [Konsoleneingaben und Konsolenausgaben](skript/java1/io.md)
 - Termin 4, 10.02.2026
   - Verzweigungen, Vergleich von Zeichenketten, Bedingte Zuweisungen und Fallunterscheidungen
   - Schleifen und Schleifensteuerung
