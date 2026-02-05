@@ -26,7 +26,9 @@ Dieses Repo beinhaltet sämtlichen Quellcode zu allen Demos sowie alle relevante
 
 | Klasse | Methode |
 | ------ | ------- |
-| PrintStream | print, println |
+| PrintStream | print, printf, println |
+| Random | nextInt |
+| Scanner | next, nextBoolean, nextDouble, nextInt, nextLine |
 | String | charAt, length |
 
 **Beispielhafte Klasse**
@@ -35,15 +37,17 @@ Dieses Repo beinhaltet sämtlichen Quellcode zu allen Demos sowie alle relevante
 public class MainClass {
 
    public static void main(String[] args) {
-      String name;
-      int age;
-      char gender;
-      String hobbies;
+      Scanner scanner = new Scanner(System.in);
 
-      name = "Hans";
-      age = 32;
-      gender = 'm';
-      hobbies = "Zocken, Lesen";
+      System.out.print("Name: ");
+      String name = scanner.next();
+      System.out.print("Alter: ");
+      int age = scanner.nextInt();
+      System.out.print("Geschlecht: ");
+      char gender = scanner.next().charAt(0);
+      System.out.print("Hobbies: ");
+      scanner.nextLine();
+      String hobbies = scanner.nextLine();
 
       System.out.println("name=" + name + ", age=" + age + ", gender=" + gender + ", hobbies=" + hobbies);
    }
