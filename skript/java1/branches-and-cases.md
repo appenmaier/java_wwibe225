@@ -1,5 +1,13 @@
 # Verzweigungen, Vergleich von Zeichenketten, Bedingte Zuweisungen und Fallunterscheidungen
 
+**Mentimeter**
+
+<img width="790" height="447" alt="image" src="https://github.com/user-attachments/assets/7fb52db1-54be-42b5-9969-2d5e7a68d812" />
+<img width="787" height="446" alt="image" src="https://github.com/user-attachments/assets/2e5ea0b0-92fa-4d30-9c41-6fc0d3e43127" />
+<img width="787" height="446" alt="image" src="https://github.com/user-attachments/assets/a341c573-86cd-4935-bd19-2acac097e653" />
+<img width="786" height="447" alt="image" src="https://github.com/user-attachments/assets/ba6af13c-bda5-4d7b-bc5a-7a3ec28a2896" />
+<img width="734" height="416" alt="image" src="https://github.com/user-attachments/assets/a4f46721-8193-4056-a337-f7390c5297d0" />
+
 **Abbildungen**
 
 <img width="1866" height="1035" alt="image" src="https://github.com/user-attachments/assets/58b61dd4-f474-4200-94a5-f010eea5ad6a" />
