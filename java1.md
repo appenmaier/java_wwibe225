@@ -14,7 +14,7 @@
   - [Mathematische Operatoren, Mathematische Berechnungen und Pseudozufallszahlen](skript/java1/calculations.md)
   - [Konsoleneingaben und Konsolenausgaben](skript/java1/io.md)
 - Termin 4, 10.02.2026
-  - [Verzweigungen, Vergleich von Zeichenketten, Bedingte Zuweisungen und Fallunterscheidungen](skript/java1/cases-and-branches.md)
+  - [Verzweigungen, Vergleich von Zeichenketten, Bedingte Zuweisungen und Fallunterscheidungen](skript/java1/branches-and-cases.md)
   - [Schleifen und Schleifensteuerung](skript/java1/loops.md)
 - Termin 5, 12.02.2026
   - Felder (Arrays), String\[\] args, Variable Argumentlisten und Multidimensionale Felder
