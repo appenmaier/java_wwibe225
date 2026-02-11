@@ -26,6 +26,7 @@ Dieses Repo beinhaltet sämtlichen Quellcode zu allen Demos sowie alle relevante
 
 | Klasse | Methode |
 | ------ | ------- |
+| Object | equals |
 | PrintStream | print, printf, println |
 | Random | nextInt |
 | Scanner | next, nextBoolean, nextDouble, nextInt, nextLine |
