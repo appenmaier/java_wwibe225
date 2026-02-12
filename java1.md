@@ -17,7 +17,7 @@
   - [Verzweigungen, Vergleich von Zeichenketten, Bedingte Zuweisungen und Fallunterscheidungen](skript/java1/branches-and-cases.md)
   - [Schleifen und Schleifensteuerung](skript/java1/loops.md)
 - Termin 5, 12.02.2026
-  - Felder (Arrays), String\[\] args, Variable Argumentlisten und Multidimensionale Felder
+  - [Felder (Arrays), String\[\] args, Variable Argumentlisten und Multidimensionale Felder](skript/java1/arrays.md)
 - Termin 6, 19.02.2026
   - Klassen, Attribute, Methoden, Objekte
   - ArrayLists
