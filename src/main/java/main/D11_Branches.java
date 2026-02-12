@@ -26,6 +26,22 @@ public class D11_Branches {
       }
 
       /* Verschachtelte Verzweigungen */
+      // ausführliche Schreibweise
+      if (age < 12) {
+         System.out.println("Du bist ein Kind");
+      } else {
+         if (age < 18) {
+            System.out.println("Du bist ein Jugendlicher");
+         } else {
+            if (age < 65) {
+               System.out.println("Du bist ein Erwachsener");
+            } else {
+               System.out.println("Du bist ein alter Mensch");
+            }
+         }
+      }
+
+      // Kurzschreibweise (if-elseif-Leiter)
       if (age < 12) {
          System.out.println("Du bist ein Kind");
       } else if (age < 18) {
@@ -37,7 +53,15 @@ public class D11_Branches {
       }
 
       /* Vergleichs-Operatoren: >, >=, <, <=, ==, != */
-      /* Logische Operatoren: && (logisches Und), || (logisches Oder), ! (logische Verneinung */
+      /* Logische Operatoren: && (logisches Und), || (logisches Oder), ! (logische Verneinung) */
+
+      /* Lazy Evaluation (nicht klausurrelevant) */
+      System.out.println("Bitte Geschlecht eingeben: ");
+      char gender = scanner.next().charAt(0);
+      if (gender == 'w' || ++age >= 18) {
+         System.out.println("Viel Spaß auf der Party");
+      }
+      System.out.println(age);
    }
 
 }

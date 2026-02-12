@@ -18,6 +18,7 @@ public class D14_Cases {
       System.out.print("Bitte gib \"R/r\", \"G/g\" oder \"B/b\" ein: ");
       char color = scanner.next().charAt(0);
 
+      // Lösung mit if-elseif-Leiter
       String colorText;
       if (color == 'r' || color == 'R') {
          colorText = "rot";
@@ -30,6 +31,7 @@ public class D14_Cases {
       }
       System.out.println(colorText);
 
+      // Lösung mit dem klassischen switch-case
       switch (color) {
          case 'r':
          case 'R':
@@ -49,6 +51,20 @@ public class D14_Cases {
       }
       System.out.println(colorText);
 
+      // Lösung mit dem switch-case-Ausdruck (ausführliche Schreibweise)
+      switch (color) {
+         case 'r', 'R':
+            colorText = "rot";
+         case 'g', 'G':
+            colorText = "grün";
+         case 'b', 'B':
+            colorText = "blau";
+         default:
+            colorText = "";
+      }
+      System.out.println(colorText);
+
+      // Lösung mit dem switch-case-Ausdruck (Kurzschreibweise)
       colorText = switch (color) {
          case 'r', 'R' -> "rot";
          case 'g', 'G' -> "grün";
