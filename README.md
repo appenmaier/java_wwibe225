@@ -20,17 +20,18 @@ Dieses Repo beinhaltet sämtlichen Quellcode zu allen Demos sowie alle relevante
 
 | Abkürzung | Bedeutung |
 | --------- | --------- |
-| DRY | Don`t Repeat Yourself |
+| DRY       | Don`t Repeat Yourself |
 
 **Wichtige Klassen und Methoden**
 
-| Klasse | Methode |
-| ------ | ------- |
-| Object | equals |
+| Klasse      | Methode |
+| ----------- | ------- |
+| Arrays      | toString |
+| Object      | equals |
 | PrintStream | print, printf, println |
-| Random | nextInt |
-| Scanner | next, nextBoolean, nextDouble, nextInt, nextLine |
-| String | charAt, length |
+| Random      | nextInt |
+| Scanner     | next, nextBoolean, nextDouble, nextInt, nextLine |
+| String      | charAt, length |
 
 **Beispielhafte Klasse**
 
@@ -40,17 +41,27 @@ public class MainClass {
    public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
 
+      /* Deklarationen und Initialisierungen */
       System.out.print("Name: ");
       String name = scanner.next();
+
       System.out.print("Alter: ");
       int age = scanner.nextInt();
+
       System.out.print("Geschlecht: ");
       char gender = scanner.next().charAt(0);
-      System.out.print("Hobbies: ");
-      scanner.nextLine();
-      String hobbies = scanner.nextLine();
 
-      System.out.println("name=" + name + ", age=" + age + ", gender=" + gender + ", hobbies=" + hobbies);
+      System.out.print("Anzahl Hobbies: ");
+      int numberOfHobbies = scanner.nextInt();
+      String[] hobbies = new String[numberOfHobbies];
+      for (int i = 0; i < numberOfHobbies; i++ {
+         System.out.print("Hobby: ");
+         String hobby = scanner.next();
+         hobbies[i] = hobby;
+      }
+
+      /* Ausgabe */
+      System.out.println("name=" + name + ", age=" + age + ", gender=" + gender + ", hobbies=" + Arrays.toString(hobbies));
    }
 
 }
@@ -58,9 +69,9 @@ public class MainClass {
 
 **Schreibweisen**
 
-| Schreibweise | Beispiel | Einsatzgebiet in Java |
-| ------------ | -------- | --------------------- |
-| Pascal Case | `MainClass` | Klassen |
-| Camel Case | `firstName`, `getFirstName()` | Datenobjekte und Methoden |
-| Snake Case | `FILE_NAME` | Konstanten |
-| Kebab Case | `font-family` | CSS-Eigenschaften bei JavaFX |
+| Schreibweise | Beispiel                      | Einsatzgebiet in Java |
+| ------------ | ----------------------------- | --------------------- |
+| Pascal Case  | `MainClass`                   | Klassen |
+| Camel Case   | `firstName`, `getFirstName()` | Datenobjekte und Methoden |
+| Snake Case   | `FILE_NAME`                   | Konstanten |
+| Kebab Case   | `font-family`                 | CSS-Eigenschaften bei JavaFX |
