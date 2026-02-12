@@ -54,7 +54,7 @@ public class MainClass {
       System.out.print("Anzahl Hobbies: ");
       int numberOfHobbies = scanner.nextInt();
       String[] hobbies = new String[numberOfHobbies];
-      for (int i = 0; i < numberOfHobbies; i++ {
+      for (int i = 0; i < numberOfHobbies; i++) {
          System.out.print("Hobby: ");
          String hobby = scanner.next();
          hobbies[i] = hobby;
