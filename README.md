@@ -27,6 +27,7 @@ Dieses Repo beinhaltet sämtlichen Quellcode zu allen Demos sowie alle relevante
 
 | Klasse      | Methode |
 | ----------- | ------- |
+| ArrayList   | add, get, remove, size |
 | Arrays      | toString |
 | Object      | equals |
 | PrintStream | print, printf, println |
@@ -35,6 +36,42 @@ Dieses Repo beinhaltet sämtlichen Quellcode zu allen Demos sowie alle relevante
 | String      | charAt, length |
 
 **Beispielhafte Klasse**
+
+```java
+public class Person {
+
+   private final String name;
+   private int age;
+   private char gender;
+   private ArrayList<String> hobbies;
+
+   public Person(String name, int age, char gender) {
+      this.name = name;
+      this.age = age;
+      this.gender = gender;
+      hobbies = new ArrayList<>();
+   }
+   public void addHobby(String hobby) {
+      hobbies.add(hobby);
+   }
+   public String getName() {
+      return name;
+   }
+   public void getOlder() {
+      age++;
+   }
+   public void setGender(char gender) {
+      this.gender = gender;
+   }
+   public ArrayList<String> getHobbies() {
+      return hobbies;
+   }
+   public String toString() {
+      return "Person [name=" + name + ", age=" + age + ", gender=" + gender + ", hobbies=" + hobbies + "]";
+   }
+
+}
+```
 
 ```java
 public class MainClass {
@@ -52,17 +89,18 @@ public class MainClass {
       System.out.print("Geschlecht: ");
       char gender = scanner.next().charAt(0);
 
+      Person person = new Person(name, age, gender);
+
       System.out.print("Anzahl Hobbies: ");
       int numberOfHobbies = scanner.nextInt();
-      String[] hobbies = new String[numberOfHobbies];
       for (int i = 0; i < numberOfHobbies; i++) {
          System.out.print("Hobby: ");
          String hobby = scanner.next();
-         hobbies[i] = hobby;
+         person.addHobby(hobby);
       }
 
       /* Ausgabe */
-      System.out.println("name=" + name + ", age=" + age + ", gender=" + gender + ", hobbies=" + Arrays.toString(hobbies));
+      System.out.println(person.toString()); // System.out.println(person);
    }
 
 }
