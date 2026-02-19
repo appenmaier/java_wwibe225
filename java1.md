@@ -19,12 +19,12 @@
 - Termin 5, 12.02.2026
   - [Felder (Arrays), String\[\] args, Variable Argumentlisten und Multidimensionale Felder](skript/java1/arrays.md)
 - Termin 6, 19.02.2026
-  - Klassen, Attribute, Methoden, Objekte
-  - ArrayLists
-  - Datenkapselung
+  - [Klassen, Attribute, Methoden, Objekte](skript/java1/oop.md)
+  - [ArrayLists](skript/java1/arraylists.md)
+  - [Datenkapselung](skript/java1/data-encapsulation.md)
+- Termin 7, 24.02.2026
   - Konstruktoren und überladene Methoden
   - String toString()
-- Termin 7, 24.02.2026
   - Statische und nichtstatische Elemente
   - For-Each-Schleife, Die Java API, Lesen von Dateien und Aufzählungen (Enumerations)
 - Termin 8, 26.02.2026
