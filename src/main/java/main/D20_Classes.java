@@ -28,6 +28,10 @@ public class D20_Classes {
       tableLight.changeLightBulb(blueLightBulb);
       System.out.println(tableLight.isShining());
       System.out.println(tableLight.lightBulb.color);
+      LightBulb oldLightBulb = tableLight.changeLightBulb(redLightBulb);
+      System.out.println(tableLight.isShining());
+      System.out.println(tableLight.lightBulb.color);
+      System.out.println(oldLightBulb.color);
 
       System.out.println(tableLight);
    }
