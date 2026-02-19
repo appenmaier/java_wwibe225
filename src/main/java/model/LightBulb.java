@@ -9,6 +9,14 @@ package model;
  */
 public class LightBulb {
 
-   public String color;
+   private String color;
+
+   public void setColor(String color) {
+      this.color = color;
+   }
+
+   public String getColor() {
+      return color;
+   }
 
 }

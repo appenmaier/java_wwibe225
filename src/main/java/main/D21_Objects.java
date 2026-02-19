@@ -7,7 +7,7 @@ import model.TableLight;
  * Objects
  *
  * @author Daniel Appenmaier
- * @version 1.0
+ * @version 2.0
  *
  */
 public class D21_Objects {
@@ -19,7 +19,7 @@ public class D21_Objects {
       i = 5;
       light1 = new TableLight();
       LightBulb redLightBulb = new LightBulb();
-      redLightBulb.color = "rot";
+      /* version 1: redLightBulb.color = "rot"; */
       light1.changeLightBulb(redLightBulb);
 
       int x = i;

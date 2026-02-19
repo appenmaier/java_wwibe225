@@ -9,9 +9,9 @@ package model;
  */
 public class TableLight {
 
-   public boolean isConnected;
-   public boolean isOn;
-   public LightBulb lightBulb;
+   private boolean isConnected;
+   private boolean isOn;
+   private LightBulb lightBulb;
 
    public void plugIn() {
       isConnected = true;
@@ -42,6 +42,18 @@ public class TableLight {
          return false;
       }
       // return isConnected && isOn && lightBulb != null;
+   }
+
+   public boolean isConnected() {
+      return isConnected;
+   }
+
+   public boolean isOn() {
+      return isOn;
+   }
+
+   public LightBulb getLightBulb() {
+      return lightBulb;
    }
 
 }
