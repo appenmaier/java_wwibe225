@@ -16,4 +16,4 @@
 - [Übungsaufgaben: Aufzählungen (Enumerations)](https://jappuccini.github.io/java-docs/production/exercises/enumerations/)
 - [Demo 28: For-Each-Schleife](../../src/main/java/main/D28_ForEachLoop.java)
 - [Demo 29: Die Java API](../../src/main/java/main/D29_JavaApi.java)
-- [Demo 30: Aufzählungen (Enumerations)](../../src/main/java/main/D28_Enumerations.java)
+- [Demo 30: Aufzählungen (Enumerations)](../../src/main/java/main/D30_Enumerations.java)
