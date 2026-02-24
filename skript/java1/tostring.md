@@ -7,4 +7,4 @@
 **Links**
 
 - [Doku: Die Mutter aller Klassen](https://jappuccini.github.io/java-docs/production/documentation/object)
-- [Demo: String toString()](../../src/main/java/D26_ToString.java)
+- [Demo: String toString()](../../src/main/java/main/D26_ToString.java)
