@@ -6,7 +6,7 @@ import model.LightBulb;
 import model.TableLight;
 
 /**
- * 
+ * String toString()
  *
  * @author Daniel Appenmaier
  * @version 1.0
