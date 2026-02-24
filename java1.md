@@ -23,10 +23,10 @@
   - [ArrayLists](skript/java1/arraylists.md)
   - [Datenkapselung](skript/java1/data-encapsulation.md)
 - Termin 7, 24.02.2026
-  - Konstruktoren und überladene Methoden
-  - String toString()
-  - Statische und nichtstatische Elemente
-  - For-Each-Schleife, Die Java API, Lesen von Dateien und Aufzählungen (Enumerations)
+  - [Konstruktoren und überladene Methoden](skript/java1/constructors.md)
+  - [String toString()](skript/java1/tostring.md)
+  - [Statische und nichtstatische Elemente](skript/java1/static.md)
+  - [For-Each-Schleife, Die Java API, Lesen von Dateien und Aufzählungen (Enumerations)](skript/java1/java-api.md)
 - Termin 8, 26.02.2026
   - Klassendiagramme und Aktivitätsdiagramme
   - Vererbung und (Dynamische) Polymorphie

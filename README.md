@@ -25,15 +25,21 @@ Dieses Repo beinhaltet sämtlichen Quellcode zu allen Demos sowie alle relevante
 
 **Wichtige Klassen und Methoden**
 
-| Klasse      | Methode |
-| ----------- | ------- |
-| ArrayList   | add, get, remove, size |
-| Arrays      | toString |
-| Object      | equals |
-| PrintStream | print, printf, println |
-| Random      | nextInt |
-| Scanner     | next, nextBoolean, nextDouble, nextInt, nextLine |
-| String      | charAt, length |
+| Klasse        | Methode |
+| ------------- | ------- |
+| ArrayList     | add, get, remove, size |
+| Arrays        | toString |
+| Boolean       | parseBoolean, valueOf |
+| Double        | parseDouble, valueOf |
+| Enumeration   | valueOf, values |
+| Integer       | parseInt, valueOf |
+| LocalDateTime | getDay, getHour, getMinute, getMonth, getYear, now, of |
+| Object        | equals, toString |
+| PrintStream   | print, printf, println |
+| Random        | nextInt |
+| Scanner       | hasNextLine, next, nextBoolean, nextDouble, nextInt, nextLine |
+| String        | charAt, length, split |
+| System        | currentTimeMillis |
 
 **Beispielhafte Klasse**
 
