@@ -13,7 +13,7 @@
 - [Doku: Dateien und Verzeichnisse](https://jappuccini.github.io/java-docs/production/documentation/files)
 - [Doku: Aufzählungen (Enumerations)](https://jappuccini.github.io/java-docs/production/documentation/enumerations)
 - [Übungsaufgaben: Die Java API](https://jappuccini.github.io/java-docs/production/exercises/java-api/)
-- [Übungsaufgaben: Aufzählungen (Enumerations)](https://jappuccini.github.io/java-docs/production/exercises/enumerations//)
+- [Übungsaufgaben: Aufzählungen (Enumerations)](https://jappuccini.github.io/java-docs/production/exercises/enumerations/)
 - [Demo 28: For-Each-Schleife](../../src/main/java/D28_ForEachLoop.java)
 - [Demo 29: Die Java API](../../src/main/java/D29_JavaApi.java)
 - [Demo 30: Aufzählungen (Enumerations)](../../src/main/java/D28_Enumerations.java)
