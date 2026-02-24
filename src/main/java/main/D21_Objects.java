@@ -1,13 +1,12 @@
 package main;
 
-import model.LightBulb;
 import model.TableLight;
 
 /**
  * Objects
  *
  * @author Daniel Appenmaier
- * @version 2.0
+ * @version 3.0
  *
  */
 public class D21_Objects {
@@ -18,9 +17,9 @@ public class D21_Objects {
 
       i = 5;
       light1 = new TableLight();
-      LightBulb redLightBulb = new LightBulb();
+      /* version 2: LightBulb redLightBulb = new LightBulb(); */
       /* version 1: redLightBulb.color = "rot"; */
-      light1.changeLightBulb(redLightBulb);
+      /* version 2: light1.changeLightBulb(redLightBulb); */
 
       int x = i;
       TableLight light2 = light1;
