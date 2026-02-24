@@ -7,5 +7,5 @@
 **Links**
 
 - [Doku: Objektorientierte Programmierung](https://jappuccini.github.io/java-docs/production/documentation/classes)
-- [Übungsaufgaben: Objektorientierte Programmierung](https://jappuccini.github.io/java-docs/production/exercises/oo/) (OO07))
-- [Demo: Statische und nichtstatische Elemente](../../src/main/java/D27_StaticElements.java)
+- [Übungsaufgaben: Objektorientierte Programmierung](https://jappuccini.github.io/java-docs/production/exercises/oo/) (OO07)
+- [Demo: Statische und nichtstatische Elemente](../../src/main/java/main/D27_StaticElements.java)
