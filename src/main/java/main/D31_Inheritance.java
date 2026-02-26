@@ -56,6 +56,18 @@ public class D31_Inheritance {
 
       for (Light light : lights) {
          light.switchOn(); // Dynamische Polymorphie
+
+         /* bis Java 16 */
+         if (light instanceof TableLight) {
+            TableLight tableLight = (TableLight) light; // Downcast
+            tableLight.plugIn();
+         }
+
+         /* seit Java 16 */
+         if (light instanceof TableLight tableLight) { // Downcast
+            tableLight.pullThePlug();
+         }
+
          System.out.println(light.isShining()); // Statische Polymorphie (println) + Dynamische
                                                 // Polymorphie (isShining)
          System.out.println(light.toString()); // Statische Polymorphie (println) + Dynamische
