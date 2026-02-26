@@ -39,9 +39,9 @@
 
 ## Downloads
 
-- [Musterklausur Programmierung I.pdf](https://github.com/user-attachments/files/23773566/Musterklausur.Programmierung.I.pdf)
-- [Musterlösung zur Musterklausur Programmierung I.pdf](https://github.com/user-attachments/files/23773564/Musterlosung.zur.Musterklausur.Programmierung.I.pdf)
-- [Cheatsheet Programmierung I.pdf](https://github.com/user-attachments/files/23773565/Cheatsheet.Programmierung.I.pdf)
+- [Musterklausur Programmierung I.pdf](static/Programmierung%20I%20-%20Musterklausur.pdf)
+- [Musterlösung zur Musterklausur Programmierung I.pdf](static/Programmierung%20I%20-%20Musterlösung%20zur%20Musterklausur.pdf)
+- [Cheatsheet Programmierung I.pdf](static/Programmierung%20I%20-%20Cheatsheet.pdf)
 
 ## Klausurergebnisse
 
