@@ -3,6 +3,7 @@ package main;
 import java.util.ArrayList;
 
 import model.FlashLight;
+import model.Light;
 import model.LightBulb;
 import model.TableLight;
 
@@ -41,6 +42,24 @@ public class D31_Inheritance {
       for (FlashLight light : flashLight) {
          light.switchOn();
          System.out.println(light.isShining());
+      }
+
+      System.out.println();
+
+      /* Ansatz mit Vererbung */
+      ArrayList<Light> lights = new ArrayList<>();
+
+      lights.add(flashLight1); // Upcast
+      lights.add(tableLight1); // Upcast
+      lights.add(tableLight2); // Upcast
+      lights.add(flashLight2); // Upcast
+
+      for (Light light : lights) {
+         light.switchOn(); // Dynamische Polymorphie
+         System.out.println(light.isShining()); // Statische Polymorphie (println) + Dynamische
+                                                // Polymorphie (isShining)
+         System.out.println(light.toString()); // Statische Polymorphie (println) + Dynamische
+                                               // Polymorphie (toString)
       }
    }
 
