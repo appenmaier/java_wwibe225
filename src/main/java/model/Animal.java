@@ -11,30 +11,19 @@ import java.time.LocalDate;
  */
 public class Animal {
 
-   private String type;
+   private final String type;
    private double weightInKg;
-   private String color;
-   private boolean isCarnivore;
-   private LocalDate birthdate;
+   private final Color color;
+   private final boolean isCarnivore;
+   private final LocalDate birthdate;
 
-   public void setType(String type) {
+   public Animal(String type, Color color, boolean isCarnivore, LocalDate birthdate,
+         double weightInKg) {
       this.type = type;
-   }
-
-   public void setWeightInKg(double weightInKg) {
-      this.weightInKg = weightInKg;
-   }
-
-   public void setColor(String color) {
       this.color = color;
-   }
-
-   public void setCarnivore(boolean isCarnivore) {
       this.isCarnivore = isCarnivore;
-   }
-
-   public void setBirthdate(LocalDate birthdate) {
       this.birthdate = birthdate;
+      this.weightInKg = weightInKg;
    }
 
    public void eat() {
@@ -53,7 +42,7 @@ public class Animal {
       return weightInKg;
    }
 
-   public String getColor() {
+   public Color getColor() {
       return color;
    }
 
@@ -63,6 +52,12 @@ public class Animal {
 
    public LocalDate getBirthdate() {
       return birthdate;
+   }
+
+   @Override
+   public String toString() {
+      return "Animal [type=" + type + ", color=" + color + ", weightInKg=" + weightInKg
+            + ", isCarnivore=" + isCarnivore + ", birthdate=" + birthdate + "]";
    }
 
 }
