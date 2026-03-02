@@ -43,74 +43,7 @@ Dieses Repo beinhaltet sämtlichen Quellcode zu allen Demos sowie alle relevante
 
 **Beispielhafte Klasse**
 
-```java
-public class Person {
-
-   private final String name;
-   private int age;
-   private char gender;
-   private ArrayList<String> hobbies;
-
-   public Person(String name, int age, char gender) {
-      this.name = name;
-      this.age = age;
-      this.gender = gender;
-      hobbies = new ArrayList<>();
-   }
-   public void addHobby(String hobby) {
-      hobbies.add(hobby);
-   }
-   public String getName() {
-      return name;
-   }
-   public void getOlder() {
-      age++;
-   }
-   public void setGender(char gender) {
-      this.gender = gender;
-   }
-   public ArrayList<String> getHobbies() {
-      return hobbies;
-   }
-   public String toString() {
-      return "Person [name=" + name + ", age=" + age + ", gender=" + gender + ", hobbies=" + hobbies + "]";
-   }
-
-}
-```
-
-```java
-public class MainClass {
-
-   public static void main(String[] args) {
-      Scanner scanner = new Scanner(System.in);
-
-      /* Deklarationen und Initialisierungen */
-      System.out.print("Name: ");
-      String name = scanner.next();
-
-      System.out.print("Alter: ");
-      int age = scanner.nextInt();
-
-      System.out.print("Geschlecht: ");
-      char gender = scanner.next().charAt(0);
-
-      Person person = new Person(name, age, gender);
-
-      System.out.print("Anzahl Hobbies: ");
-      int numberOfHobbies = scanner.nextInt();
-      for (int i = 0; i < numberOfHobbies; i++) {
-         System.out.print("Hobby: ");
-         String hobby = scanner.next();
-         person.addHobby(hobby);
-      }
-
-      /* Ausgabe */
-      System.out.println(person.toString()); // System.out.println(person);
-   }
-
-}
-```
+<img width="1866" height="1035" alt="image" src="https://github.com/user-attachments/assets/aae9768b-8872-40a4-9e33-497012a0a1fe" />
 
 **Schreibweisen**
 

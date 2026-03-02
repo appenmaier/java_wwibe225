@@ -28,8 +28,8 @@
   - [Statische und nichtstatische Elemente](skript/java1/static.md)
   - [For-Each-Schleife, Die Java API, Lesen von Dateien und Aufzählungen (Enumerations)](skript/java1/java-api.md)
 - Termin 8, 26.02.2026
-  - Klassendiagramme und Aktivitätsdiagramme
-  - Vererbung und (Dynamische) Polymorphie
+  - [Klassendiagramme und Aktivitätsdiagramme](skript/java1/uml.md)
+  - [Vererbung und (Dynamische) Polymorphie](skript/java1/inheritance.md)
 - Termin 9, 03.03.2026
   - Die Mutter aller Klassen
   - Abstrakte und finale Klassen und Methoden
