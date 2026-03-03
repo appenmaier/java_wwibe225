@@ -31,11 +31,49 @@
   - [Klassendiagramme und Aktivitätsdiagramme](skript/java1/uml.md)
   - [Vererbung und (Dynamische) Polymorphie](skript/java1/inheritance.md)
 - Termin 9, 03.03.2026
-  - Die Mutter aller Klassen
-  - Abstrakte und finale Klassen und Methoden
-  - Schnittstellen (Interfaces) und Listen
+  - [Die Mutter aller Klassen](skript/java1/object.md)
+  - [Abstrakte und finale Klassen und Methoden](skript/java1/abstract-and-final.md)
+  - [Schnittstellen (Interfaces) und Listen](skript/java1/interfaces.md)
 - Termin 10, 12.03.2026
   - Klausurvorbereitung
+
+## Gestaltungsprinzipien
+
+| Abkürzung | Bedeutung |
+| --------- | --------- |
+| DRY       | Don`t Repeat Yourself |
+| KISS      | Keep It Simple, Stupid! |
+
+## Wichtige Klassen und Methoden
+
+| Klasse        | Methode |
+| ------------- | ------- |
+| ArrayList     | add, get, remove, size |
+| Arrays        | toString |
+| Boolean       | parseBoolean, valueOf |
+| Double        | parseDouble, valueOf |
+| Enumeration   | valueOf, values |
+| Integer       | parseInt, valueOf |
+| LocalDateTime | getDay, getHour, getMinute, getMonth, getYear, now, of |
+| Object        | equals, hashcode, toString |
+| PrintStream   | print, printf, println |
+| Random        | nextInt |
+| Scanner       | hasNextLine, next, nextBoolean, nextDouble, nextInt, nextLine |
+| String        | charAt, length, split |
+| System        | currentTimeMillis |
+
+## Beispielhafte Klasse
+
+<img width="1866" height="1035" alt="image" src="https://github.com/user-attachments/assets/26da2800-9b19-40a6-aa62-a4e18af2f3da" />
+
+## Schreibweisen
+
+| Schreibweise | Beispiel                      | Einsatzgebiet in Java |
+| ------------ | ----------------------------- | --------------------- |
+| Pascal Case  | `MainClass`                   | Klassen |
+| Camel Case   | `firstName`, `getFirstName()` | Datenobjekte und Methoden |
+| Snake Case   | `FILE_NAME`                   | Konstanten |
+| Kebab Case   | `font-family`                 | CSS-Eigenschaften bei JavaFX |
 
 ## Downloads
 
