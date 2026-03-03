@@ -37,22 +37,6 @@
 - Termin 10, 12.03.2026
   - Klausurvorbereitung
 
-## Downloads
-
-- [Musterklausur Programmierung I.pdf](static/Programmierung%20I%20-%20Musterklausur.pdf)
-- [Musterlösung zur Musterklausur Programmierung I.pdf](static/Programmierung%20I%20-%20Musterlösung%20zur%20Musterklausur.pdf)
-- [Cheatsheet Programmierung I.pdf](static/Programmierung%20I%20-%20Cheatsheet.pdf)
-
-## Klausurergebnisse
-
-| Note         | Klausur Q4 2024 (WWIBE224) | Klausur Q1 2023 (WWIBE123) | Klausur Q4 2022 (WWIBE122) | Klausur Q1 2021 (WWIBE121) | Klausur Q4 2020 (WWIBE120) | Durchschnitt |
-| ------------ | -------------------------- | -------------------------- | -------------------------- | -------------------------- | -------------------------- | ------------ |
-| sehr gut     | 25%                        | 17%                        | 18%                        | 17%                        | 34%                        | 22%          |
-| gut          | 28%                        | 22%                        | 15%                        | 14%                        | 41%                        | 24%          |
-| befriedigend | 22%                        | 25%                        | 24%                        | 36%                        | 9%                         | 23%          |
-| ausreichend  | 6%                         | 14%                        | 12%                        | 6%                         | 6%                         | 9%           |
-| ungenügend   | 19%                        | 22%                        | 30%                        | 28%                        | 9%                         | 22%          |
-
 ## Gestaltungsprinzipien
 
 | Abkürzung | Bedeutung |
@@ -80,7 +64,7 @@
 
 ## Beispielhafte Klasse
 
-<img width="1866" height="1035" alt="image" src="https://github.com/user-attachments/assets/aae9768b-8872-40a4-9e33-497012a0a1fe" />
+<img width="1866" height="1035" alt="image" src="https://github.com/user-attachments/assets/26da2800-9b19-40a6-aa62-a4e18af2f3da" />
 
 ## Schreibweisen
 
@@ -90,3 +74,19 @@
 | Camel Case   | `firstName`, `getFirstName()` | Datenobjekte und Methoden |
 | Snake Case   | `FILE_NAME`                   | Konstanten |
 | Kebab Case   | `font-family`                 | CSS-Eigenschaften bei JavaFX |
+
+## Downloads
+
+- [Musterklausur Programmierung I.pdf](static/Programmierung%20I%20-%20Musterklausur.pdf)
+- [Musterlösung zur Musterklausur Programmierung I.pdf](static/Programmierung%20I%20-%20Musterlösung%20zur%20Musterklausur.pdf)
+- [Cheatsheet Programmierung I.pdf](static/Programmierung%20I%20-%20Cheatsheet.pdf)
+
+## Klausurergebnisse
+
+| Note         | Klausur Q4 2024 (WWIBE224) | Klausur Q1 2023 (WWIBE123) | Klausur Q4 2022 (WWIBE122) | Klausur Q1 2021 (WWIBE121) | Klausur Q4 2020 (WWIBE120) | Durchschnitt |
+| ------------ | -------------------------- | -------------------------- | -------------------------- | -------------------------- | -------------------------- | ------------ |
+| sehr gut     | 25%                        | 17%                        | 18%                        | 17%                        | 34%                        | 22%          |
+| gut          | 28%                        | 22%                        | 15%                        | 14%                        | 41%                        | 24%          |
+| befriedigend | 22%                        | 25%                        | 24%                        | 36%                        | 9%                         | 23%          |
+| ausreichend  | 6%                         | 14%                        | 12%                        | 6%                         | 6%                         | 9%           |
+| ungenügend   | 19%                        | 22%                        | 30%                        | 28%                        | 9%                         | 22%          |
