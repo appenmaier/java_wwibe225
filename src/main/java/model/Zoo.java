@@ -36,4 +36,21 @@ public class Zoo {
       return "Zoo [name=" + name + ", animals=" + animals + "]";
    }
 
+   public ArrayList<WaterAnimal> getWaterAnimals() {
+      ArrayList<WaterAnimal> waterAnimals = new ArrayList<>();
+
+      for (Animal animal : animals) {
+         if (animal instanceof WaterAnimal) {
+            WaterAnimal waterAnimal = (WaterAnimal) animal; // Downcast
+            waterAnimals.add(waterAnimal);
+         }
+
+         if (animal instanceof LandAnimal landAnimal) { // Downcast
+            System.out.println(landAnimal + " ist kein Wassertier");
+         }
+      }
+
+      return waterAnimals;
+   }
+
 }
