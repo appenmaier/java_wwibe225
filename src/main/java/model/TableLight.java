@@ -7,7 +7,7 @@ package model;
  * @version 1.0
  *
  */
-public class TableLight extends Light {
+public final class TableLight extends Light {
 
    private boolean isConnected;
    private LightBulb lightBulb;
