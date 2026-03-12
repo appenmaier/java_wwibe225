@@ -76,7 +76,7 @@ public class CookieJar { // 0,5
    } // 4 +0,5
 
 } 1
-// 1,5 + 1
+// 1,5 +1
 ```
 
 **ShapeReader**
@@ -113,10 +113,10 @@ public class ShapeReader { // 0,5
       scanner.close(); // 0,5
 
       return shapes; // 0,5
-   } // 16,5
+   } // 16,5 +0,5
 
-} //0,5
-// 17
+} // 0,5
+// 17 +0,5
 ```
 
 **DiceGame3**
@@ -169,7 +169,7 @@ public class DiceGame3 { // 0,5
          sysout(name2 + "gewinnt"); // 0,5
       }
 
-   } // 18
+   } // 18 +1
 
 } // 2
 // 20 +1
