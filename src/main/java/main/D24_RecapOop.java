@@ -1,7 +1,7 @@
 package main;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
+import java.util.List;
 
 import model.Animal;
 import model.Color;
@@ -40,7 +40,7 @@ public class D24_RecapOop {
       animal2.move(); // Dynamische Polymorphie
       animal3.move(); // Dynamische Polymorphie
 
-      ArrayList<Animal> animals = zoo.getAnimals();
+      List<Animal> animals = zoo.getAnimals();
       for (Animal animal : animals) {
          System.out.println(animal.toString()); // Dynamische Polymorphie
       }
@@ -49,7 +49,7 @@ public class D24_RecapOop {
 
       System.out.println();
 
-      ArrayList<WaterAnimal> waterAnimals = zoo.getWaterAnimals();
+      List<WaterAnimal> waterAnimals = zoo.getWaterAnimals();
       System.out.println(waterAnimals);
    }
 

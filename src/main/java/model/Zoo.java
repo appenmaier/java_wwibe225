@@ -1,6 +1,7 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Zoo
@@ -12,11 +13,11 @@ import java.util.ArrayList;
 public class Zoo {
 
    private final String name;
-   private final ArrayList<Animal> animals;
+   private final List<Animal> animals;
 
    public Zoo(String name) {
       this.name = name;
-      animals = new ArrayList<>();
+      animals = new ArrayList<>(); // Upcast
    }
 
    public String getName() {
@@ -27,7 +28,7 @@ public class Zoo {
       animals.add(animal);
    }
 
-   public ArrayList<Animal> getAnimals() {
+   public List<Animal> getAnimals() {
       return animals;
    }
 
@@ -36,8 +37,8 @@ public class Zoo {
       return "Zoo [name=" + name + ", animals=" + animals + "]";
    }
 
-   public ArrayList<WaterAnimal> getWaterAnimals() {
-      ArrayList<WaterAnimal> waterAnimals = new ArrayList<>();
+   public List<WaterAnimal> getWaterAnimals() {
+      List<WaterAnimal> waterAnimals = new ArrayList<>();
 
       for (Animal animal : animals) {
          if (animal instanceof WaterAnimal) {

@@ -9,7 +9,7 @@ import java.time.LocalDate;
  * @version 1.0
  *
  */
-public class WaterAnimal extends Animal {
+public final class WaterAnimal extends Animal {
 
    private final boolean isSaltwater;
 
@@ -25,6 +25,11 @@ public class WaterAnimal extends Animal {
 
    public void swim() {
       System.out.println("schwimm, schwimm");
+   }
+
+   @Override
+   public void eat() {
+      weightInKg *= 1.02;
    }
 
    @Override
