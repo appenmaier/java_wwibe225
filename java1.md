@@ -35,7 +35,7 @@
   - [Abstrakte und finale Klassen und Methoden](skript/java1/abstract-and-final.md)
   - [Schnittstellen (Interfaces) und Listen](skript/java1/interfaces.md)
 - Termin 10, 12.03.2026
-  - Klausurvorbereitung
+  - [Klausurvorbereitung](skript/java1/preparation.md)
 
 ## Gestaltungsprinzipien
 
