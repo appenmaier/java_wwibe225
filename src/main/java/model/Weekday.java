@@ -1,7 +1,7 @@
 package model;
 
 /**
- * Weekday
+ * Enum of the seven days of the week.
  *
  * @author Daniel Appenmaier
  * @version 1.0

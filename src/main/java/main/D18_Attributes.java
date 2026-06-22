@@ -6,7 +6,8 @@ import model.Flight;
 import model.FlightConnection;
 
 /**
- * Attributes
+ * Demonstrates object attributes by creating {@link model.FlightConnection}
+ * and {@link model.Flight} instances and setting their fields.
  *
  * @author Daniel Appenmaier
  * @version 1.0

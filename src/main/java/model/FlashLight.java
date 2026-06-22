@@ -1,7 +1,7 @@
 package model;
 
 /**
- * Flash Light
+ * A battery-powered flashlight whose energy decreases with each use.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -11,6 +11,7 @@ public final class FlashLight extends Light {
 
    private double energyLevel;
 
+   /** Creates a new fully-charged flashlight. */
    public FlashLight() {
       energyLevel = 1;
    }
@@ -21,18 +22,15 @@ public final class FlashLight extends Light {
       isOn = true;
    }
 
+   /** Recharges the flashlight to full energy (1.0). */
    public void recharge() {
       energyLevel = 1;
    }
 
+   /** @return {@code true} if the flashlight is on and has remaining energy */
    @Override
    public boolean isShining() {
-      if (isOn == true && energyLevel > 0) {
-         return true;
-      } else {
-         return false;
-      }
-      // return isOn && energyLevel > 0;
+      return isOn && energyLevel > 0;
    }
 
    @Override

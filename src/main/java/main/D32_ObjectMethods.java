@@ -5,7 +5,8 @@ import java.time.LocalDate;
 import model.Person;
 
 /**
- * Object Methods
+ * Demonstrates the three key {@link Object} methods overridden in model classes:
+ * {@code toString()}, {@code equals()}, and {@code hashCode()}.
  *
  * @author Daniel Appenmaier
  * @version 1.0

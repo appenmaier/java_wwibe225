@@ -7,7 +7,9 @@ import model.TableLight;
 import model.Weekday;
 
 /**
- * Enumerations
+ * Demonstrates enumerations: using custom enums ({@link model.PlugType},
+ * {@link model.Weekday}), standard library enums ({@link java.time.Month}),
+ * and the {@code valueOf} method.
  *
  * @author Daniel Appenmaier
  * @version 1.0

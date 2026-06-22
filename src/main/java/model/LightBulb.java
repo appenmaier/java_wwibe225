@@ -1,7 +1,7 @@
 package model;
 
 /**
- * Light Bulb
+ * Represents a light bulb with a given color.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -11,10 +11,16 @@ public class LightBulb {
 
    private final String color;
 
+   /**
+    * Creates a new light bulb with the given color.
+    *
+    * @param color the color of the light bulb
+    */
    public LightBulb(String color) {
       this.color = color;
    }
 
+   /** @return the color of the light bulb */
    public String getColor() {
       return color;
    }

@@ -3,7 +3,8 @@ package main;
 import java.util.Scanner;
 
 /**
- * Conditional Branches
+ * Demonstrates the conditional (ternary) operator {@code ? :} as a
+ * concise alternative to an if/else branch.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -15,19 +16,19 @@ public class D13_ConditionalBranches {
    public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
 
-      System.out.print("Bitte Dein Alter eingeben: ");
+      System.out.print("Please enter your age: ");
       int age = scanner.nextInt();
 
       String ageText;
       if (age < 18) {
-         ageText = "minderjährig";
+         ageText = "a minor";
       } else {
-         ageText = "volljährig";
+         ageText = "an adult";
       }
-      System.out.println("Du bist " + ageText);
+      System.out.println("You are " + ageText);
 
-      ageText = (age < 18) ? "minderjährig" : "volljährig";
-      System.out.println("Du bist " + ageText);
+      ageText = (age < 18) ? "a minor" : "an adult";
+      System.out.println("You are " + ageText);
    }
 
 }

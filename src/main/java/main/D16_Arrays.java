@@ -4,7 +4,8 @@ import java.util.Arrays;
 import java.util.Random;
 
 /**
- * Arrays
+ * Demonstrates array declaration, initialization, element access,
+ * iterating with a while/for loop, and printing with {@link java.util.Arrays#toString}.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -15,11 +16,11 @@ public class D16_Arrays {
    public static void main(String[] args) {
       Random random = new Random();
 
-      /* Deklaration und Initialisierung */
+      /* declaration and initialization */
       int[] numbers = new int[100]; // { 2, 8, 9, 1,... };
       String[] names = {"Hans", "Peter", "Lisa"}; // new String[3];
 
-      /* Zugriff auf einzelne Feld-Elemente */
+      /* access to individual array elements */
       numbers[50] = 3;
       numbers[0] = 7;
       numbers[numbers.length - 1] = 5;
@@ -35,7 +36,7 @@ public class D16_Arrays {
       int randomNumber = random.nextInt(0, names.length);
       System.out.println("names[randomNumber]: " + names[randomNumber]);
 
-      /* Zugriff auf mehrere Feld-Elemente */
+      /* access to multiple array elements */
       int x = 0;
 
       while (x < numbers.length) {
@@ -43,7 +44,7 @@ public class D16_Arrays {
          x++;
       }
 
-      /* Ausgabe von Feld-Elementen */
+      /* output of array elements */
       for (int i = 0; i < numbers.length; i++) {
          int number = numbers[i];
          System.out.println(i + ": " + number);

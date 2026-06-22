@@ -3,7 +3,8 @@ package main;
 import model.TableLight;
 
 /**
- * Static Elements
+ * Demonstrates static class members: a static counter shared across all instances
+ * and a static constant ({@link Math#PI}).
  *
  * @author Daniel Appenmaier
  * @version 1.0

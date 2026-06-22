@@ -3,7 +3,8 @@ package main;
 import model.TableLight;
 
 /**
- * Data Encapsulation
+ * Demonstrates data encapsulation: accessing object state only through
+ * getter and setter methods rather than public fields.
  *
  * @author Daniel Appenmaier
  * @version 2.0
@@ -13,7 +14,7 @@ public class D23_DataEncapsulation {
 
    public static void main(String[] args) {
       /* version 1: LightBulb redLightBulb = new LightBulb(); */
-      /* version 1: redLightBulb.setColor("rot"); */
+      /* version 1: redLightBulb.setColor("red"); */
 
       TableLight light1 = new TableLight();
       light1.switchOn();

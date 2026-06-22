@@ -3,7 +3,7 @@ package main;
 import java.util.Arrays;
 
 /**
- * Arrays07
+ * Exercise: merges two integer arrays into a single concatenated array.
  *
  * @author Daniel Appenmaier
  * @version 1.0

@@ -1,7 +1,8 @@
 package model;
 
 /**
- * Table Light
+ * A table lamp that requires a power connection and a light bulb to shine.
+ * Tracks the total number of instances created via a static counter.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -15,11 +16,17 @@ public final class TableLight extends Light implements WiredDevice {
 
    private static int numberOfTableLights;
 
+   /** Creates a new table lamp with no light bulb and plug type F. */
    public TableLight() {
       plugType = PlugType.TYPE_F;
       numberOfTableLights++;
    }
 
+   /**
+    * Creates a new table lamp with the given light bulb and plug type F.
+    *
+    * @param lightBulb the light bulb to install
+    */
    public TableLight(LightBulb lightBulb) {
       plugType = PlugType.TYPE_F;
       numberOfTableLights++;
@@ -36,26 +43,30 @@ public final class TableLight extends Light implements WiredDevice {
       isConnected = false;
    }
 
+   /**
+    * Replaces the current light bulb with a new one.
+    *
+    * @param newLightBulb the replacement light bulb
+    * @return the old light bulb that was removed
+    */
    public LightBulb changeLightBulb(LightBulb newLightBulb) {
       LightBulb oldLightBulb = lightBulb;
       lightBulb = newLightBulb;
       return oldLightBulb;
    }
 
+   /** @return {@code true} if the lamp is connected, switched on, and has a light bulb */
    @Override
    public boolean isShining() {
-      if (isConnected == true && isOn == true && lightBulb != null) {
-         return true;
-      } else {
-         return false;
-      }
-      // return isConnected && isOn && lightBulb != null;
+      return isConnected && isOn && lightBulb != null;
    }
 
+   /** @return {@code true} if the lamp is plugged into a power source */
    public boolean isConnected() {
       return isConnected;
    }
 
+   /** @return the currently installed light bulb, or {@code null} if none */
    public LightBulb getLightBulb() {
       return lightBulb;
    }
@@ -66,10 +77,12 @@ public final class TableLight extends Light implements WiredDevice {
             + lightBulb + ", plugType=" + plugType + "]";
    }
 
+   /** @return the total number of TableLight instances created */
    public static int getNumberOfTableLights() {
       return numberOfTableLights;
    }
 
+   /** @return the plug type of this lamp */
    public PlugType getPlugType() {
       return plugType;
    }

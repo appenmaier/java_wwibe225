@@ -1,7 +1,8 @@
 package main;
 
 /**
- * Arithmetic Operators
+ * Demonstrates arithmetic operators: basic operations, increment/decrement,
+ * pre/post-increment, and division by zero behaviour.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -10,25 +11,25 @@ package main;
 public class D07_ArithemticOperators {
 
    public static void main(String[] args) {
-      /* Grundrechenarten */
+      /* basic arithmetic */
       int a = 5, b = 3;
 
-      int c1 = a + b; // Addition
-      int c2 = a - b; // Subtraktion
-      int c3 = a * b; // Multiplikation
-      int c4 = a / b; // Ganzzahlige Division (Quotient)
-      int c5 = a % b; // Ganzzahlige Division (Divisionsrest)
-      double c6 = (double) a / b; // Division
-      float c7 = (float) a / b; // Division
+      int c1 = a + b; // addition
+      int c2 = a - b; // subtraction
+      int c3 = a * b; // multiplication
+      int c4 = a / b; // integer division (quotient)
+      int c5 = a % b; // integer division (remainder)
+      double c6 = (double) a / b; // division
+      float c7 = (float) a / b; // division
 
       System.out.println("c1: " + c1);
       System.out.println("c2: " + c2);
       System.out.println("c3: " + c3);
-      System.out.println("c4 und c5: " + c4 + " Rest " + c5);
+      System.out.println("c4 and c5: " + c4 + " remainder " + c5);
       System.out.println("c6: " + c6);
       System.out.println("c7: " + c7);
 
-      /* Inkrementieren */
+      /* incrementing */
       int c = 0;
       c = c + 1;
       c += 1;
@@ -36,14 +37,14 @@ public class D07_ArithemticOperators {
 
       System.out.println("c: " + c);
 
-      /* Dekrementieren */
+      /* decrementing */
       c = c - 1;
       c -= 1;
       c--;
 
       System.out.println("c: " + c);
 
-      /* Postinkrement vs Preinkrement */
+      /* post-increment vs pre-increment */
       c = 0;
       a = 1;
       c = a++;
@@ -56,7 +57,7 @@ public class D07_ArithemticOperators {
       System.out.println("c: " + c);
       System.out.println("a: " + a);
 
-      /* Teilen durch Null */
+      /* division by zero */
       double d1 = 1.0 / 0.0;
       double d2 = 1.0 / -0.0;
       double d3 = 0.0 / 0.0;

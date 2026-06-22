@@ -1,7 +1,7 @@
 package main;
 
 /**
- * Hello World
+ * Demonstrates declaring, initializing, and printing a String variable.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -10,11 +10,11 @@ package main;
 public class D01_HelloWorld {
 
    public static void main(String[] args) {
-      String text; // Deklaration
+      String text; // declaration
 
-      text = "Hello World"; // Initialisierung
+      text = "Hello World"; // initialization
 
-      /* Ausgabe */
+      /* output */
       System.out.println(text);
    }
 

@@ -1,7 +1,7 @@
 package model;
 
 /**
- * Flight Connection
+ * Represents a scheduled flight connection between two airports.
  *
  * @author Daniel Appenmaier
  * @version 1.0

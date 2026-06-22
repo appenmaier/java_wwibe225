@@ -1,7 +1,7 @@
 package main;
 
 /**
- * Type Casting
+ * Demonstrates widening (type promotion) and narrowing (type demotion) type conversions.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -10,7 +10,7 @@ package main;
 public class D05_TypeCasting {
 
    public static void main(String[] args) {
-      /* Erweiternde Typumwandlung (Type Promotion) */
+      /* widening type conversion (type promotion) */
       byte b1 = 65;
       short s1 = b1;
       int i1 = s1;
@@ -25,7 +25,7 @@ public class D05_TypeCasting {
       System.out.println("f1: " + f1);
       System.out.println("d1: " + d1);
 
-      /* Einschränkende Typumwandlung (Type Demotion) */
+      /* narrowing type conversion (type demotion) */
       double d2 = 1.9;
       float f2 = (float) d2;
       long l2 = (long) f2;
@@ -40,7 +40,7 @@ public class D05_TypeCasting {
       System.out.println("f2: " + f2);
       System.out.println("d2: " + d2);
 
-      /* Typumwandlung für char <-> int */
+      /* type conversion for char <-> int */
       int i3 = 'A';
       char c3 = 65;
 

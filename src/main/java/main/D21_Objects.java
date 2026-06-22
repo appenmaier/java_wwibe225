@@ -3,7 +3,8 @@ package main;
 import model.TableLight;
 
 /**
- * Objects
+ * Demonstrates the difference between primitive value copying and object reference
+ * sharing: two reference variables pointing to the same object.
  *
  * @author Daniel Appenmaier
  * @version 3.0
@@ -18,7 +19,7 @@ public class D21_Objects {
       i = 5;
       light1 = new TableLight();
       /* version 2: LightBulb redLightBulb = new LightBulb(); */
-      /* version 1: redLightBulb.color = "rot"; */
+      /* version 1: redLightBulb.color = "red"; */
       /* version 2: light1.changeLightBulb(redLightBulb); */
 
       int x = i;

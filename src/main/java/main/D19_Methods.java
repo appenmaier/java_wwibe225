@@ -4,7 +4,8 @@ import model.StringArray;
 import utility.StringArrayHelper;
 
 /**
- * Methods
+ * Compares a procedural approach (data and routines separated) with an
+ * object-oriented approach (data and routines combined) using a dynamic String array.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -13,7 +14,7 @@ import utility.StringArrayHelper;
 public class D19_Methods {
 
    public static void main(String[] args) {
-      /* Prozedurale Lösung (Daten und Routinen getrennt) */
+      /* procedural solution (data and routines separated) */
       String[] names = new String[2];
 
       StringArrayHelper.print(names);
@@ -27,7 +28,7 @@ public class D19_Methods {
 
       System.out.println();
 
-      /* Objektorientierte Lösung (Daten und Routinen verbunden) */
+      /* object-oriented solution (data and routines combined) */
       StringArray names2 = new StringArray();
 
       names2.print();

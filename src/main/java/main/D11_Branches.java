@@ -3,7 +3,8 @@ package main;
 import java.util.Scanner;
 
 /**
- * Branches
+ * Demonstrates if/else branches, nested branches, the if-else-if ladder,
+ * comparison operators, logical operators, and lazy evaluation.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -15,51 +16,51 @@ public class D11_Branches {
    public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
 
-      System.out.print("Bitte Dein Alter eingeben: ");
+      System.out.print("Please enter your age: ");
       int age = scanner.nextInt();
 
-      /* Einfachverzweigungen */
+      /* simple branches */
       if (age < 18) {
-         System.out.println("Du bist minderjährig");
+         System.out.println("You are a minor");
       } else {
-         System.out.println("Du bist volljährig");
+         System.out.println("You are an adult");
       }
 
-      /* Verschachtelte Verzweigungen */
-      // ausführliche Schreibweise
+      /* nested branches */
+      // verbose form
       if (age < 12) {
-         System.out.println("Du bist ein Kind");
+         System.out.println("You are a child");
       } else {
          if (age < 18) {
-            System.out.println("Du bist ein Jugendlicher");
+            System.out.println("You are a teenager");
          } else {
             if (age < 65) {
-               System.out.println("Du bist ein Erwachsener");
+               System.out.println("You are an adult");
             } else {
-               System.out.println("Du bist ein alter Mensch");
+               System.out.println("You are a senior");
             }
          }
       }
 
-      // Kurzschreibweise (if-elseif-Leiter)
+      // shorthand form (if-else-if ladder)
       if (age < 12) {
-         System.out.println("Du bist ein Kind");
+         System.out.println("You are a child");
       } else if (age < 18) {
-         System.out.println("Du bist ein Jugendlicher");
+         System.out.println("You are a teenager");
       } else if (age < 65) {
-         System.out.println("Du bist ein Erwachsener");
+         System.out.println("You are an adult");
       } else {
-         System.out.println("Du bist ein alter Mensch");
+         System.out.println("You are a senior");
       }
 
-      /* Vergleichs-Operatoren: >, >=, <, <=, ==, != */
-      /* Logische Operatoren: && (logisches Und), || (logisches Oder), ! (logische Verneinung) */
+      /* comparison operators: >, >=, <, <=, ==, != */
+      /* logical operators: && (logical AND), || (logical OR), ! (logical NOT) */
 
-      /* Lazy Evaluation (nicht klausurrelevant) */
-      System.out.println("Bitte Geschlecht eingeben: ");
+      /* lazy evaluation (not exam-relevant) */
+      System.out.println("Please enter your gender: ");
       char gender = scanner.next().charAt(0);
-      if (gender == 'w' || ++age >= 18) {
-         System.out.println("Viel Spaß auf der Party");
+      if (gender == 'f' || ++age >= 18) {
+         System.out.println("Have fun at the party");
       }
       System.out.println(age);
    }

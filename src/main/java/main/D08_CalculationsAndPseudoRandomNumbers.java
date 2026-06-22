@@ -3,7 +3,8 @@ package main;
 import java.util.Random;
 
 /**
- * Calculations and Pseudo Random Numbers
+ * Demonstrates mathematical calculations using {@link Math} and pseudo-random
+ * number generation using {@link java.util.Random}.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -12,12 +13,12 @@ import java.util.Random;
 public class D08_CalculationsAndPseudoRandomNumbers {
 
    public static void main(String[] args) {
-      /* Mathematische Berechnungen */
+      /* mathematical calculations */
       double result = Math.sqrt(64);
 
       System.out.println("result: " + result);
 
-      /* Pseudozufallszahlen */
+      /* pseudo random numbers */
       int randomNumber;
 
       randomNumber = (int) (Math.random() * 100) + 1;

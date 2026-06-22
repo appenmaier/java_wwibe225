@@ -4,7 +4,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * ConsoleApplications03
+ * Exercise: a two-player turn-based dice combat game.
+ * Each player names their fighter and assigns health points.
+ * Fighters take turns attacking and blocking with dice until one falls.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -18,7 +20,7 @@ public class E01_ConsoleApplications03 {
       Random random = new Random();
       int rounds = 0;
 
-      /* Deklarationen */
+      /* declarations */
       String nameOfPlayer1;
       String nameOfPlayer2;
 
@@ -38,42 +40,42 @@ public class E01_ConsoleApplications03 {
       int valueOfDice9;
       int valueOfDice10;
 
-      /* Initialisierungen */
-      System.out.print("Spieler 1, Name: ");
+      /* initializations */
+      System.out.print("Player 1, Name: ");
       nameOfPlayer1 = scanner.next();
-      System.out.print("Spieler 1, Kämpfer 1, Name: ");
+      System.out.print("Player 1, Fighter 1, Name: ");
       nameOfFighter1 = scanner.next();
-      System.out.print("Spieler 1, Kämpfer, LP: ");
+      System.out.print("Player 1, Fighter, HP: ");
       healthPointsOfFighter1 = scanner.nextInt();
 
-      System.out.print("Spieler 2, Name: ");
+      System.out.print("Player 2, Name: ");
       nameOfPlayer2 = scanner.next();
-      System.out.print("Spieler 2, Kämpfer 2, Name: ");
+      System.out.print("Player 2, Fighter 2, Name: ");
       nameOfFighter2 = scanner.next();
-      System.out.print("Spieler 2, Kämpfer, LP: ");
+      System.out.print("Player 2, Fighter, HP: ");
       healthPointsOfFighter2 = scanner.nextInt();
 
       System.out.println();
 
-      /* Spielablauf */
+      /* game loop */
       while (healthPointsOfFighter1 > 0 && healthPointsOfFighter2 > 0) {
          rounds++;
-         /* Ausgabe */
+         /* output */
          System.out.println("*---------*");
-         System.out.println("* Runde " + rounds + " *");
+         System.out.println("* Round " + rounds + " *");
          System.out.println("*---------*");
 
-         /* Zug 1 */
-         // Ausgabe
-         System.out.println("*-------*");
-         System.out.println("* Zug 1 *");
-         System.out.println("*-------*");
+         /* turn 1 */
+         // output
+         System.out.println("*--------*");
+         System.out.println("* Turn 1 *");
+         System.out.println("*--------*");
 
-         System.out.println("Kämpfer von " + nameOfPlayer1 + ": " + nameOfFighter1 + " ("
-               + healthPointsOfFighter1 + " LP)");
-         System.out.println("Kämpfer von " + nameOfPlayer2 + ": " + nameOfFighter2 + " ("
-               + healthPointsOfFighter2 + " LP)");
-         System.out.println(nameOfFighter1 + " greift " + nameOfFighter2 + " an.");
+         System.out.println("Fighter of " + nameOfPlayer1 + ": " + nameOfFighter1 + " ("
+               + healthPointsOfFighter1 + " HP)");
+         System.out.println("Fighter of " + nameOfPlayer2 + ": " + nameOfFighter2 + " ("
+               + healthPointsOfFighter2 + " HP)");
+         System.out.println(nameOfFighter1 + " attacks " + nameOfFighter2 + ".");
 
          valueOfDice1 = random.nextInt(1, 7);
          valueOfDice2 = random.nextInt(1, 7);
@@ -86,13 +88,13 @@ public class E01_ConsoleApplications03 {
          int totalHits = valueOfDice1 + valueOfDice2 + valueOfDice3 + valueOfDice4;
          int totalBlocks = valueOfDice5 + valueOfDice6 + valueOfDice7;
 
-         // Ausgabe
-         System.out.println(nameOfFighter1 + " würfelt " + valueOfDice1 + ", " + valueOfDice2 + ", "
-               + valueOfDice3 + " und " + valueOfDice4 + ".");
-         System.out.println(nameOfFighter1 + " erzielt " + totalHits + " Treffer.");
-         System.out.println(nameOfFighter2 + " würfelt " + valueOfDice5 + ", " + valueOfDice6
-               + " und " + valueOfDice7 + ".");
-         System.out.println(nameOfFighter2 + " erzielt " + totalBlocks + " Blocks.");
+         // output
+         System.out.println(nameOfFighter1 + " rolls " + valueOfDice1 + ", " + valueOfDice2 + ", "
+               + valueOfDice3 + " and " + valueOfDice4 + ".");
+         System.out.println(nameOfFighter1 + " scores " + totalHits + " hits.");
+         System.out.println(nameOfFighter2 + " rolls " + valueOfDice5 + ", " + valueOfDice6
+               + " and " + valueOfDice7 + ".");
+         System.out.println(nameOfFighter2 + " scores " + totalBlocks + " blocks.");
 
          if (totalHits > totalBlocks) {
             int damageValue = totalHits - totalBlocks;
@@ -100,29 +102,29 @@ public class E01_ConsoleApplications03 {
             healthPointsOfFighter2 = healthPointsOfFighter2 - damageValue;
             // healthPointsOfFighter2 -= damageValue;
 
-            // Ausgabe
-            System.out.println(nameOfFighter2 + " erleidet " + damageValue
-                  + " Schaden und hat noch " + healthPointsOfFighter2 + " LP.");
+            // output
+            System.out.println(nameOfFighter2 + " takes " + damageValue
+                  + " damage and has " + healthPointsOfFighter2 + " HP left.");
          }
 
          System.out.println();
 
-         /* Prüfung */
+         /* check */
          if (healthPointsOfFighter2 <= 0) {
             continue;
          }
 
-         /* Zug 2 */
-         // Ausgabe
-         System.out.println("*-------*");
-         System.out.println("* Zug 2 *");
-         System.out.println("*-------*");
+         /* turn 2 */
+         // output
+         System.out.println("*--------*");
+         System.out.println("* Turn 2 *");
+         System.out.println("*--------*");
 
-         System.out.println("Kämpfer von " + nameOfPlayer1 + ": " + nameOfFighter1 + " ("
-               + healthPointsOfFighter1 + " LP)");
-         System.out.println("Kämpfer von " + nameOfPlayer2 + ": " + nameOfFighter2 + " ("
-               + healthPointsOfFighter2 + " LP)");
-         System.out.println(nameOfFighter2 + " greift " + nameOfFighter1 + " an.");
+         System.out.println("Fighter of " + nameOfPlayer1 + ": " + nameOfFighter1 + " ("
+               + healthPointsOfFighter1 + " HP)");
+         System.out.println("Fighter of " + nameOfPlayer2 + ": " + nameOfFighter2 + " ("
+               + healthPointsOfFighter2 + " HP)");
+         System.out.println(nameOfFighter2 + " attacks " + nameOfFighter1 + ".");
 
          valueOfDice1 = random.nextInt(1, 7);
          valueOfDice2 = random.nextInt(1, 7);
@@ -135,13 +137,13 @@ public class E01_ConsoleApplications03 {
          totalHits = valueOfDice1 + valueOfDice2 + valueOfDice3 + valueOfDice4;
          totalBlocks = valueOfDice5 + valueOfDice6 + valueOfDice7;
 
-         // Ausgabe
-         System.out.println(nameOfFighter2 + " würfelt " + valueOfDice1 + ", " + valueOfDice2 + ", "
-               + valueOfDice3 + " und " + valueOfDice4 + ".");
-         System.out.println(nameOfFighter2 + " erzielt " + totalHits + " Treffer.");
-         System.out.println(nameOfFighter1 + " würfelt " + valueOfDice5 + ", " + valueOfDice6
-               + " und " + valueOfDice7 + ".");
-         System.out.println(nameOfFighter1 + " erzielt " + totalBlocks + " Blocks.");
+         // output
+         System.out.println(nameOfFighter2 + " rolls " + valueOfDice1 + ", " + valueOfDice2 + ", "
+               + valueOfDice3 + " and " + valueOfDice4 + ".");
+         System.out.println(nameOfFighter2 + " scores " + totalHits + " hits.");
+         System.out.println(nameOfFighter1 + " rolls " + valueOfDice5 + ", " + valueOfDice6
+               + " and " + valueOfDice7 + ".");
+         System.out.println(nameOfFighter1 + " scores " + totalBlocks + " blocks.");
 
          if (totalHits > totalBlocks) {
             int damageValue = totalHits - totalBlocks;
@@ -149,9 +151,9 @@ public class E01_ConsoleApplications03 {
             healthPointsOfFighter1 = healthPointsOfFighter1 - damageValue;
             // healthPointsOfFighter1 -= damageValue;
 
-            // Ausgabe
-            System.out.println(nameOfFighter1 + " erleidet " + damageValue
-                  + " Schaden und hat noch " + healthPointsOfFighter1 + " LP.");
+            // output
+            System.out.println(nameOfFighter1 + " takes " + damageValue
+                  + " damage and has " + healthPointsOfFighter1 + " HP left.");
          }
 
          System.out.println();

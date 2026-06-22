@@ -4,7 +4,8 @@ import model.LightBulb;
 import model.TableLight;
 
 /**
- * Constructors
+ * Demonstrates constructor overloading: creating objects with and without
+ * parameters using multiple constructors.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -14,7 +15,7 @@ public class D25_Constructors {
 
    @SuppressWarnings("unused")
    public static void main(String[] args) {
-      LightBulb redLightBulb = new LightBulb("rot");
+      LightBulb redLightBulb = new LightBulb("red");
       // redLightBulb.setColor("rot");
 
       TableLight light1 = new TableLight();

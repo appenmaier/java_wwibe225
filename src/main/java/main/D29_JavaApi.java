@@ -9,7 +9,9 @@ import java.util.Scanner;
 import model.Person;
 
 /**
- * Java API
+ * Demonstrates reading structured data from a text file using
+ * {@link java.io.File} and {@link java.util.Scanner}, parsing each line
+ * into a {@link model.Person} object.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -22,8 +24,8 @@ public class D29_JavaApi {
 
       // File file = new
       // File("C:\\Users\\D054906\\git\\java_wwibe225\\src\\main\\resources\\persons.txt"); //
-      // absolute Pfadangabe
-      File file = new File("src/main/resources/persons.txt"); // relative Pfadangabe
+      // absolute path
+      File file = new File("src/main/resources/persons.txt"); // relative path
       Scanner scanner = new Scanner(file);
 
       while (scanner.hasNextLine()) {

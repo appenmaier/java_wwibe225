@@ -1,7 +1,7 @@
 package main;
 
 /**
- * Parameter String[] args
+ * Demonstrates how to access command-line arguments passed via {@code String[] args}.
  *
  * @author Daniel Appenmaier
  * @version 1.0

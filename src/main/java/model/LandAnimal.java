@@ -3,7 +3,7 @@ package model;
 import java.time.LocalDate;
 
 /**
- * Land Animal
+ * Represents a land-dwelling animal with a fixed number of legs.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -13,18 +13,30 @@ public final class LandAnimal extends Animal {
 
    private final int numberOfLegs;
 
+   /**
+    * Creates a new land animal.
+    *
+    * @param type         the species name
+    * @param color        the color of the animal
+    * @param isCarnivore  {@code true} if the animal is a carnivore
+    * @param birthdate    the animal's date of birth
+    * @param weightInKg   the animal's weight in kilograms
+    * @param numberOfLegs the number of legs
+    */
    public LandAnimal(String type, Color color, boolean isCarnivore, LocalDate birthdate,
          double weightInKg, int numberOfLegs) {
       super(type, color, isCarnivore, birthdate, weightInKg);
       this.numberOfLegs = numberOfLegs;
    }
 
+   /** @return the number of legs */
    public int getNumberOfLegs() {
       return numberOfLegs;
    }
 
+   /** Makes the animal run, printing a running sound. */
    public void run() {
-      System.out.println("renn, renn");
+      System.out.println("run, run");
    }
 
    @Override

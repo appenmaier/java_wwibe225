@@ -1,7 +1,7 @@
 package main;
 
 /**
- * Strings
+ * Demonstrates common String methods and string concatenation.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -10,7 +10,7 @@ package main;
 public class D06_Strings {
 
    public static void main(String[] args) {
-      /* Wichtige Methoden */
+      /* important methods */
       String text = "Hello World";
 
       int length = text.length();
@@ -23,7 +23,7 @@ public class D06_Strings {
       System.out.println("firstCharacter: " + firstCharacter);
       System.out.println("lastCharacter: " + lastCharacter);
 
-      /* Zeichenketten-Konkatenation */
+      /* string concatenation */
       String columns = "id";
       String table = "flight";
       String condition = "city = \"Friedrichshafen\"";

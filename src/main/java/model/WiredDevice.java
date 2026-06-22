@@ -1,7 +1,7 @@
 package model;
 
 /**
- * Wired Device
+ * Interface for devices that can be plugged into and unplugged from a power source.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -9,8 +9,10 @@ package model;
  */
 public interface WiredDevice {
 
+   /** Connects the device to a power source. */
    void plugIn();
 
+   /** Disconnects the device from the power source. */
    void pullThePlug();
 
 }

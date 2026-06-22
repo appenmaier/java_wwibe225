@@ -1,7 +1,7 @@
 package model;
 
 /**
- * Color
+ * Enum of colors represented as RGB values.
  *
  * @author Daniel Appenmaier
  * @version 1.0

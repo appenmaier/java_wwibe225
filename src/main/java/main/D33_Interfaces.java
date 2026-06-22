@@ -9,7 +9,9 @@ import model.Toaster;
 import model.WiredDevice;
 
 /**
- * Interfaces
+ * Demonstrates interfaces: storing different concrete types under a common interface
+ * ({@link model.WiredDevice}), dynamic polymorphism via interface references,
+ * and downcasting to access subtype-specific behaviour.
  *
  * @author Daniel Appenmaier
  * @version 1.0

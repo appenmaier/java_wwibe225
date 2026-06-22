@@ -3,7 +3,8 @@ package main;
 import java.util.Scanner;
 
 /**
- * String Comparison
+ * Demonstrates why {@code ==} must not be used for String comparison
+ * and how to use {@link String#equals} instead.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -15,19 +16,19 @@ public class D12_StringComparison {
    public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
 
-      System.out.print("Bitte die Zeichenkette \"true\" eingeben: ");
+      System.out.print("Please enter the string \"true\": ");
       String input = scanner.next();
 
       if (input == "true") {
-         System.out.println("Gut gemacht");
+         System.out.println("Well done");
       } else {
-         System.out.println("Leider falsch");
+         System.out.println("Unfortunately wrong");
       }
 
       if (input.equals("true")) {
-         System.out.println("Richtig");
+         System.out.println("Correct");
       } else {
-         System.out.println("Falsch");
+         System.out.println("Wrong");
       }
    }
 

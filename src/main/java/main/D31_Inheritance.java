@@ -8,7 +8,9 @@ import model.LightBulb;
 import model.TableLight;
 
 /**
- * Inheritance
+ * Demonstrates inheritance: upcast to a common base type ({@link model.Light}),
+ * dynamic polymorphism, instanceof checks, downcast, and the difference
+ * between working with and without a shared supertype.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -17,15 +19,15 @@ import model.TableLight;
 public class D31_Inheritance {
 
    public static void main(String[] args) {
-      /* Objekterzeugungen */
+      /* object creation */
       TableLight tableLight1 = new TableLight();
-      LightBulb redLightBulb = new LightBulb("rot");
+      LightBulb redLightBulb = new LightBulb("red");
       TableLight tableLight2 = new TableLight(redLightBulb);
 
       FlashLight flashLight1 = new FlashLight();
       FlashLight flashLight2 = new FlashLight();
 
-      /* Ansatz ohne Vererbung */
+      /* approach without inheritance */
       ArrayList<TableLight> tableLights = new ArrayList<>();
       tableLights.add(tableLight1);
       tableLights.add(tableLight2);
@@ -46,7 +48,7 @@ public class D31_Inheritance {
 
       System.out.println();
 
-      /* Ansatz mit Vererbung */
+      /* approach with inheritance */
       ArrayList<Light> lights = new ArrayList<>();
 
       lights.add(flashLight1); // Upcast
@@ -57,21 +59,19 @@ public class D31_Inheritance {
       for (Light light : lights) {
          light.switchOn(); // Dynamische Polymorphie
 
-         /* bis Java 16 */
+         /* until Java 16 */
          if (light instanceof TableLight) {
             TableLight tableLight = (TableLight) light; // Downcast
             tableLight.plugIn();
          }
 
-         /* seit Java 16 */
+         /* since Java 16 */
          if (light instanceof TableLight tableLight) { // Downcast
             tableLight.pullThePlug();
          }
 
-         System.out.println(light.isShining()); // Statische Polymorphie (println) + Dynamische
-                                                // Polymorphie (isShining)
-         System.out.println(light.toString()); // Statische Polymorphie (println) + Dynamische
-                                               // Polymorphie (toString)
+         System.out.println(light.isShining()); // static polymorphism (println) + dynamic polymorphism (isShining)
+         System.out.println(light.toString()); // static polymorphism (println) + dynamic polymorphism (toString)
       }
    }
 

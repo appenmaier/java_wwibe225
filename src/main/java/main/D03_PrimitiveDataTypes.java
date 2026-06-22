@@ -3,7 +3,8 @@ package main;
 import java.math.BigDecimal;
 
 /**
- * Primitive Data Types
+ * Demonstrates all primitive data types: integer, char, boolean, and floating point.
+ * Also shows the precision difference between {@code float}, {@code double}, and {@code BigDecimal}.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -12,7 +13,7 @@ import java.math.BigDecimal;
 public class D03_PrimitiveDataTypes {
 
    public static void main(String[] args) {
-      /* Ganze Zahlen */
+      /* integer numbers */
       byte byte1 = 67;
       short short1 = 22_743;
       int int1 = 1_000_000_000;
@@ -23,7 +24,7 @@ public class D03_PrimitiveDataTypes {
       System.out.println("int1: " + int1);
       System.out.println("long1: " + long1);
 
-      /* Zeichen */
+      /* characters */
       char char1 = 'A';
       char char2 = 0b1000001;
       char char3 = 0101;
@@ -38,12 +39,12 @@ public class D03_PrimitiveDataTypes {
       System.out.println("char5: " + char5);
       System.out.println("char6: " + char6);
 
-      /* Boolscher Wahrheitswert */
+      /* boolean truth value */
       boolean boolean1 = true;
 
       System.out.println("boolean1 : " + boolean1);
 
-      /* Gleitkommazahlen (Floating Point Numbers) */
+      /* floating point numbers */
       float float1 = 0.1F;
       double double1 = 0.1;
 

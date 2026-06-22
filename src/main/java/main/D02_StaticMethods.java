@@ -4,7 +4,7 @@ import utility.Calculator;
 import utility.Printer;
 
 /**
- * Static Methods
+ * Demonstrates calling static methods from utility classes.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -19,10 +19,10 @@ public class D02_StaticMethods {
       Printer.printHelloWorld();
       Printer.printHelloWorld();
 
-      Printer.printText("Hallo");
+      Printer.printText("Hello");
       Printer.printText("Daniel");
       Printer.printText(",");
-      Printer.printText("wie gehts?");
+      Printer.printText("how are you?");
 
       int result = Calculator.add(5, 3);
       System.out.println(result);

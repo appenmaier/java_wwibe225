@@ -3,7 +3,7 @@ package model;
 import java.time.LocalDate;
 
 /**
- * Flight
+ * Represents a concrete flight on a specific date with a price.
  *
  * @author Daniel Appenmaier
  * @version 1.0

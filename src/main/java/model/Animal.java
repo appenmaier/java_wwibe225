@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 /**
- * Animal
+ * Abstract base class representing an animal in the zoo.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -18,6 +18,15 @@ public abstract class Animal {
    private final boolean isCarnivore;
    private final LocalDate birthdate;
 
+   /**
+    * Creates a new animal with the given properties.
+    *
+    * @param type        the species name of the animal
+    * @param color       the color of the animal
+    * @param isCarnivore {@code true} if the animal is a carnivore
+    * @param birthdate   the animal's date of birth
+    * @param weightInKg  the animal's weight in kilograms
+    */
    public Animal(String type, Color color, boolean isCarnivore, LocalDate birthdate,
          double weightInKg) {
       this.type = type;
@@ -27,28 +36,35 @@ public abstract class Animal {
       this.weightInKg = weightInKg;
    }
 
+   /** Feeds the animal, increasing its weight. */
    public abstract void eat();
 
+   /** Moves the animal, decreasing its weight by 2%. */
    public void move() {
       weightInKg *= 0.98;
    }
 
+   /** @return the species name */
    public final String getType() {
       return type;
    }
 
+   /** @return the current weight in kilograms */
    public final double getWeightInKg() {
       return weightInKg;
    }
 
+   /** @return the color of the animal */
    public final Color getColor() {
       return color;
    }
 
+   /** @return {@code true} if the animal is a carnivore */
    public final boolean isCarnivore() {
       return isCarnivore;
    }
 
+   /** @return the animal's date of birth */
    public final LocalDate getBirthdate() {
       return birthdate;
    }
