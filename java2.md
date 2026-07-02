@@ -16,9 +16,9 @@
 
 ## Downloads
 
-- [Musterklausur Programmierung II.pdf](static/Programmierung%20II%20-%20Musterklausur.pdf)
-- [Musterlösung zur Musterklausur Programmierung II.pdf](static/Programmierung%20II%20-%20Musterlösung%20zur%20Musterklausur.pdf)
-- [Cheatsheet Programmierung II.pdf](static/Programmierung%20II%20-%20Cheatsheet.pdf)
+- [Musterklausur Programmierung II.pdf](static/exam.pdf)
+- [Musterlösung Programmierung II.pdf](static/solution.pdf)
+- [Cheatsheet Programmierung II.pdf](static/cheatsheet.pdf)
 
 ## Klausurergebnisse
 
