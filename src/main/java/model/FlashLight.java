@@ -27,7 +27,11 @@ public final class FlashLight extends Light {
       energyLevel = 1;
    }
 
-   /** @return {@code true} if the flashlight is on and has remaining energy */
+   /**
+    * Returns whether the flashlight is currently emitting light.
+    *
+    * @return {@code true} if the flashlight is on and has remaining energy
+    */
    @Override
    public boolean isShining() {
       return isOn && energyLevel > 0;

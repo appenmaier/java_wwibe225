@@ -20,7 +20,6 @@ public class LightBulb {
       this.color = color;
    }
 
-   /** @return the color of the light bulb */
    public String getColor() {
       return color;
    }

@@ -29,27 +29,22 @@ public class Person {
       this.birthdate = birthdate;
    }
 
-   /** @return the person's name */
    public String getName() {
       return name;
    }
 
-   /** @param name the new name */
    public void setName(String name) {
       this.name = name;
    }
 
-   /** @return the person's gender character */
    public char getGender() {
       return gender;
    }
 
-   /** @param gender the new gender character */
    public void setGender(char gender) {
       this.gender = gender;
    }
 
-   /** @return the person's date of birth */
    public LocalDate getBirthdate() {
       return birthdate;
    }

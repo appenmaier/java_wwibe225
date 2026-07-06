@@ -55,18 +55,20 @@ public final class TableLight extends Light implements WiredDevice {
       return oldLightBulb;
    }
 
-   /** @return {@code true} if the lamp is connected, switched on, and has a light bulb */
+   /**
+    * Returns whether the lamp is actually emitting light.
+    *
+    * @return {@code true} if the lamp is connected, switched on, and has a light bulb
+    */
    @Override
    public boolean isShining() {
       return isConnected && isOn && lightBulb != null;
    }
 
-   /** @return {@code true} if the lamp is plugged into a power source */
    public boolean isConnected() {
       return isConnected;
    }
 
-   /** @return the currently installed light bulb, or {@code null} if none */
    public LightBulb getLightBulb() {
       return lightBulb;
    }
@@ -77,12 +79,15 @@ public final class TableLight extends Light implements WiredDevice {
             + lightBulb + ", plugType=" + plugType + "]";
    }
 
-   /** @return the total number of TableLight instances created */
+   /**
+    * Returns the total number of {@link TableLight} instances created.
+    *
+    * @return the number of TableLight instances
+    */
    public static int getNumberOfTableLights() {
       return numberOfTableLights;
    }
 
-   /** @return the plug type of this lamp */
    public PlugType getPlugType() {
       return plugType;
    }

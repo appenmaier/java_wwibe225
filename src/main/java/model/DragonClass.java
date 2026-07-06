@@ -30,26 +30,18 @@ public class DragonClass {
       this.age = age;
    }
 
-   /** @return the dragon's age in years */
    public int getAge() {
       return age;
    }
 
-   /**
-    * Sets the dragon's age.
-    *
-    * @param age the new age in years
-    */
    public void setAge(int age) {
       this.age = age;
    }
 
-   /** @return the dragon's name */
    public String getName() {
       return name;
    }
 
-   /** @return the elemental type of this dragon */
    public DragonType getType() {
       return type;
    }

@@ -25,13 +25,11 @@ public class Toy extends Present {
       this.priceInEuro = priceInEuro;
    }
 
-   /** @return a short description of this toy */
    @Override
    public String getDescription() {
       return description;
    }
 
-   /** @return the price of this toy in euros */
    public double getPriceInEuro() {
       return priceInEuro;
    }

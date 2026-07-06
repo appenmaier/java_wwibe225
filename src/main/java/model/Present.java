@@ -22,7 +22,6 @@ public abstract class Present implements Wrappable {
       isWrapped = false;
    }
 
-   /** @return {@code true} if this present is currently wrapped */
    public boolean isWrapped() {
       return isWrapped;
    }

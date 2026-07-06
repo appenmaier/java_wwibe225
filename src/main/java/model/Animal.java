@@ -44,27 +44,22 @@ public abstract class Animal {
       weightInKg *= 0.98;
    }
 
-   /** @return the species name */
    public final String getType() {
       return type;
    }
 
-   /** @return the current weight in kilograms */
    public final double getWeightInKg() {
       return weightInKg;
    }
 
-   /** @return the color of the animal */
    public final Color getColor() {
       return color;
    }
 
-   /** @return {@code true} if the animal is a carnivore */
    public final boolean isCarnivore() {
       return isCarnivore;
    }
 
-   /** @return the animal's date of birth */
    public final LocalDate getBirthdate() {
       return birthdate;
    }

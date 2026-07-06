@@ -28,12 +28,15 @@ public class SantaClaus {
       presents.add(present);
    }
 
-   /** @return the list of all presents in Santa's bag */
    public List<Present> getPresents() {
       return presents;
    }
 
-   /** @return the number of {@link Toy} presents in the bag */
+   /**
+    * Returns the number of {@link Toy} presents in the bag.
+    *
+    * @return the number of toys
+    */
    public int getNumberOfToys() {
       int numberOfToys = 0;
 

@@ -21,17 +21,14 @@ public enum PlugType {
       this.region = region;
    }
 
-   /** @return the human-readable description of the plug type */
    public String getDescription() {
       return description;
    }
 
-   /** @return the norm/standard identifier (e.g. "CEE 7/4") */
    public String getNorm() {
       return norm;
    }
 
-   /** @return the geographic region where this plug type is commonly used */
    public String getRegion() {
       return region;
    }

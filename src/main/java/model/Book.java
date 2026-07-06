@@ -23,17 +23,14 @@ public class Book extends Present {
       this.author = author;
    }
 
-   /** @return the book's title */
    public String getTitle() {
       return title;
    }
 
-   /** @return the book's author */
    public String getAuthor() {
       return author;
    }
 
-   /** @return a description combining title and author */
    @Override
    public String getDescription() {
       return title + " " + author;

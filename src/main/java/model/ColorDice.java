@@ -33,12 +33,10 @@ public class ColorDice {
       };
    }
 
-   /** @return the color shown on the last roll */
    public DiceColor getColor() {
       return color;
    }
 
-   /** @return the numeric value (1–6) shown on the last roll */
    public int getValue() {
       return value;
    }

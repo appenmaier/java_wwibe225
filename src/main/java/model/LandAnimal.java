@@ -29,7 +29,6 @@ public final class LandAnimal extends Animal {
       this.numberOfLegs = numberOfLegs;
    }
 
-   /** @return the number of legs */
    public int getNumberOfLegs() {
       return numberOfLegs;
    }

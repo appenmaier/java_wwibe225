@@ -21,12 +21,15 @@ public abstract class Light {
       isOn = false;
    }
 
-   /** @return {@code true} if the light is switched on */
    public boolean isOn() {
       return isOn;
    }
 
-   /** @return {@code true} if the light is actually emitting light */
+   /**
+    * Returns whether the light is actually emitting light.
+    *
+    * @return {@code true} if the light is shining
+    */
    public abstract boolean isShining();
 
    @Override

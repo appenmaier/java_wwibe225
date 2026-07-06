@@ -9,7 +9,11 @@ package model;
  */
 public interface Wrappable {
 
-   /** @return a short description of this item */
+   /**
+    * Returns a short description of this item.
+    *
+    * @return a short description
+    */
    String getDescription();
 
    /** Wraps this item. */

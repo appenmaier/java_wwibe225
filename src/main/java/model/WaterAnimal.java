@@ -16,12 +16,12 @@ public final class WaterAnimal extends Animal {
    /**
     * Creates a new water animal.
     *
-    * @param type         the species name
-    * @param color        the color of the animal
-    * @param isCarnivore  {@code true} if the animal is a carnivore
-    * @param birthdate    the animal's date of birth
-    * @param weightInKg   the animal's weight in kilograms
-    * @param isSaltwater  {@code true} if the animal lives in saltwater
+    * @param type        the species name
+    * @param color       the color of the animal
+    * @param isCarnivore {@code true} if the animal is a carnivore
+    * @param birthdate   the animal's date of birth
+    * @param weightInKg  the animal's weight in kilograms
+    * @param isSaltwater {@code true} if the animal lives in saltwater
     */
    public WaterAnimal(String type, Color color, boolean isCarnivore, LocalDate birthdate,
          double weightInKg, boolean isSaltwater) {
@@ -29,7 +29,6 @@ public final class WaterAnimal extends Animal {
       this.isSaltwater = isSaltwater;
    }
 
-   /** @return {@code true} if the animal lives in saltwater */
    public boolean isSaltwater() {
       return isSaltwater;
    }

@@ -25,7 +25,6 @@ public class Zoo {
       animals = new ArrayList<>(); // Upcast
    }
 
-   /** @return the name of the zoo */
    public String getName() {
       return name;
    }
@@ -39,7 +38,6 @@ public class Zoo {
       animals.add(animal);
    }
 
-   /** @return the list of all animals in the zoo */
    public List<Animal> getAnimals() {
       return animals;
    }
