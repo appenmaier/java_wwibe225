@@ -3,7 +3,8 @@
 ## Skript
 
 - Termin 1, 03.07.2026
-  - [Wiederholung: _Einführung in die Programmierung_, Datenklassen (Records)](skript/java2/repetition.md)
+  - [Wiederholung: _Einführung in die Programmierung_](skript/java2/repetition.md)
+  - [Datenklassen (Records)](skript/java2/records.md)
 - Termin 2, 07.07.2026
 - Termin 3, 14.07.2026
 - Termin 4, 17.07.2026
