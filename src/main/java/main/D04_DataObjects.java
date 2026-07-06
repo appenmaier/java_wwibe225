@@ -50,6 +50,11 @@ public class D04_DataObjects {
       System.out.println(PI);
    }
 
+   /**
+    * Demonstrates variable scope: {@code x} and {@code i} are local to this method.
+    *
+    * @param x a local integer parameter
+    */
    public static void doSomething(int x) {
       int i = 5;
       x = 7;
