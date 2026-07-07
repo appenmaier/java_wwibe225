@@ -16,6 +16,13 @@ import model.DragonType;
  */
 public class D34_Records {
 
+   /**
+    * Entry point – creates dragon objects using a plain class, a record, and a Lombok-annotated
+    * class, then compares their behaviour for field access, equality, hash codes, and
+    * {@code toString}.
+    *
+    * @param args command-line arguments (not used)
+    */
    public static void main(String[] args) {
       // Approach with normal class
       DragonClass dragon1 = new DragonClass("Fafnir", DragonType.FIRE, 500);

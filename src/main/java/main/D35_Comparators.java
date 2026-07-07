@@ -15,8 +15,9 @@ import model.MovieByRatingDescendingComparator;
 public class D35_Comparators {
 
    /**
-    * Entry point – sorts lists of integers, strings, and {@link model.Movie} objects using their
-    * natural ordering and prints the results before and after sorting.
+    * Entry point – sorts lists of integers, strings, and {@link model.Movie} objects using natural
+    * ordering ({@link Comparable}) and a custom {@link java.util.Comparator}, printing the results
+    * before and after each sort.
     *
     * @param args command-line arguments (not used)
     */
