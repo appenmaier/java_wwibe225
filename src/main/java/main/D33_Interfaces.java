@@ -3,6 +3,7 @@ package main;
 import java.util.ArrayList;
 import java.util.List;
 
+import model.AlreadyPluggedInException;
 import model.FlashLight;
 import model.TableLight;
 import model.Toaster;
@@ -10,8 +11,8 @@ import model.WiredDevice;
 
 /**
  * Demonstrates interfaces: storing different concrete types under a common interface
- * ({@link model.WiredDevice}), dynamic polymorphism via interface references,
- * and downcasting to access subtype-specific behaviour.
+ * ({@link model.WiredDevice}), dynamic polymorphism via interface references, and downcasting to
+ * access subtype-specific behaviour.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -20,7 +21,7 @@ import model.WiredDevice;
 public class D33_Interfaces {
 
    @SuppressWarnings("unused")
-   public static void main(String[] args) {
+   public static void main(String[] args) throws AlreadyPluggedInException {
       TableLight tableLight1 = new TableLight();
       TableLight tableLight2 = new TableLight();
       FlashLight flashLight = new FlashLight();

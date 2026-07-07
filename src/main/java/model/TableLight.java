@@ -1,8 +1,8 @@
 package model;
 
 /**
- * A table lamp that requires a power connection and a light bulb to shine.
- * Tracks the total number of instances created via a static counter.
+ * A table lamp that requires a power connection and a light bulb to shine. Tracks the total number
+ * of instances created via a static counter.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -34,7 +34,11 @@ public final class TableLight extends Light implements WiredDevice {
    }
 
    @Override
-   public void plugIn() {
+   public void plugIn() throws AlreadyPluggedInException {
+      if (isConnected) {
+         throw new AlreadyPluggedInException();
+      }
+
       isConnected = true;
    }
 

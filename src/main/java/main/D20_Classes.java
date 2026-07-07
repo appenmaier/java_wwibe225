@@ -1,10 +1,11 @@
 package main;
 
+import model.AlreadyPluggedInException;
 import model.TableLight;
 
 /**
- * Demonstrates creating a {@link model.TableLight} object and calling its methods.
- * Shows how an object's state changes step by step.
+ * Demonstrates creating a {@link model.TableLight} object and calling its methods. Shows how an
+ * object's state changes step by step.
  *
  * @author Daniel Appenmaier
  * @version 3.0
@@ -12,7 +13,7 @@ import model.TableLight;
  */
 public class D20_Classes {
 
-   public static void main(String[] args) {
+   public static void main(String[] args) throws AlreadyPluggedInException {
       /* version 2: LightBulb redLightBulb = new LightBulb(); */
       /* version 1: redLightBulb.color = "red"; */
 

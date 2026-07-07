@@ -1,10 +1,11 @@
 package main;
 
+import model.AlreadyPluggedInException;
 import model.TableLight;
 
 /**
- * Demonstrates the difference between primitive value copying and object reference
- * sharing: two reference variables pointing to the same object.
+ * Demonstrates the difference between primitive value copying and object reference sharing: two
+ * reference variables pointing to the same object.
  *
  * @author Daniel Appenmaier
  * @version 3.0
@@ -12,7 +13,7 @@ import model.TableLight;
  */
 public class D21_Objects {
 
-   public static void main(String[] args) {
+   public static void main(String[] args) throws AlreadyPluggedInException {
       int i = 0;
       TableLight light1 = null;
 

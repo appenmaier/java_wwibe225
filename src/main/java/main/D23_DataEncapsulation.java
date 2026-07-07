@@ -1,10 +1,11 @@
 package main;
 
+import model.AlreadyPluggedInException;
 import model.TableLight;
 
 /**
- * Demonstrates data encapsulation: accessing object state only through
- * getter and setter methods rather than public fields.
+ * Demonstrates data encapsulation: accessing object state only through getter and setter methods
+ * rather than public fields.
  *
  * @author Daniel Appenmaier
  * @version 2.0
@@ -12,7 +13,7 @@ import model.TableLight;
  */
 public class D23_DataEncapsulation {
 
-   public static void main(String[] args) {
+   public static void main(String[] args) throws AlreadyPluggedInException {
       /* version 1: LightBulb redLightBulb = new LightBulb(); */
       /* version 1: redLightBulb.setColor("red"); */
 

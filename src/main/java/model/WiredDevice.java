@@ -10,7 +10,7 @@ package model;
 public interface WiredDevice {
 
    /** Connects the device to a power source. */
-   void plugIn();
+   void plugIn() throws AlreadyPluggedInException;
 
    /** Disconnects the device from the power source. */
    void pullThePlug();

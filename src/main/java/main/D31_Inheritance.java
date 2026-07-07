@@ -2,15 +2,16 @@ package main;
 
 import java.util.ArrayList;
 
+import model.AlreadyPluggedInException;
 import model.FlashLight;
 import model.Light;
 import model.LightBulb;
 import model.TableLight;
 
 /**
- * Demonstrates inheritance: upcast to a common base type ({@link model.Light}),
- * dynamic polymorphism, instanceof checks, downcast, and the difference
- * between working with and without a shared supertype.
+ * Demonstrates inheritance: upcast to a common base type ({@link model.Light}), dynamic
+ * polymorphism, instanceof checks, downcast, and the difference between working with and without a
+ * shared supertype.
  *
  * @author Daniel Appenmaier
  * @version 1.0
@@ -18,7 +19,7 @@ import model.TableLight;
  */
 public class D31_Inheritance {
 
-   public static void main(String[] args) {
+   public static void main(String[] args) throws AlreadyPluggedInException {
       /* object creation */
       TableLight tableLight1 = new TableLight();
       LightBulb redLightBulb = new LightBulb("red");
@@ -70,8 +71,10 @@ public class D31_Inheritance {
             tableLight.pullThePlug();
          }
 
-         System.out.println(light.isShining()); // static polymorphism (println) + dynamic polymorphism (isShining)
-         System.out.println(light.toString()); // static polymorphism (println) + dynamic polymorphism (toString)
+         System.out.println(light.isShining()); // static polymorphism (println) + dynamic
+                                                // polymorphism (isShining)
+         System.out.println(light.toString()); // static polymorphism (println) + dynamic
+                                               // polymorphism (toString)
       }
    }
 
