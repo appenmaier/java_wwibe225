@@ -6,6 +6,8 @@
   - [Wiederholung: _Einführung in die Programmierung_](skript/java2/repetition.md)
   - [Datenklassen (Records)](skript/java2/records.md)
 - Termin 2, 07.07.2026
+  - [Komparatoren](skript/java2/comparators.md)
+  - [Ausnahmen (Exceptions)](skript/java2/exceptions.md)
 - Termin 3, 14.07.2026
 - Termin 4, 17.07.2026
 - Termin 5, 21.07.2026
