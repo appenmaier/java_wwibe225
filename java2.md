@@ -9,6 +9,8 @@
   - [Komparatoren](skript/java2/comparators.md)
   - [Ausnahmen (Exceptions)](skript/java2/exceptions.md)
 - Termin 3, 14.07.2026
+  - [Innere Klassen (Inner Classes)](skript/java2/inner-classes.md)
+  - [Lambda-Ausdrücke (Lambdas)](skript/java2/lambdas.md) 
 - Termin 4, 17.07.2026
 - Termin 5, 21.07.2026
 - Termin 6, 24.07.2026
