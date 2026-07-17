@@ -9,8 +9,8 @@ import java.util.function.Consumer;
 import model.Movie;
 
 /**
- * Demonstrates local classes, anonymous classes, lambda expressions, and method references
- * for sorting and iterating a list of movies.
+ * Demonstrates local classes, anonymous classes, lambda expressions, and method references for
+ * sorting and iterating a list of movies.
  */
 public class D37_InnerClasses {
 
@@ -90,6 +90,9 @@ public class D37_InnerClasses {
 
       movies.forEach(m -> m.incrementRating()); // Lambda Expression
       movies.forEach(Movie::incrementRating); // Method Reference
+
+      movies.sort(Comparator.comparing(m -> m.getRating())); // Lambda Expression
+      movies.sort(Comparator.comparing(Movie::getRating)); // Method Reference
    }
 
 }
