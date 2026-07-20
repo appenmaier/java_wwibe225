@@ -15,6 +15,7 @@
   - [Assoziativspeicher (Maps)](skript/java2/maps.md)
   - [Optionals](skript/java2/optionals.md) 
 - Termin 5, 21.07.2026
+  - [Wiederholung: Termin 2 - 4](skript/java2/repetition2.md) 
 - Termin 6, 24.07.2026
 - Termin 7, 28.07.2026
 - Termin 8, 31.07.2026
