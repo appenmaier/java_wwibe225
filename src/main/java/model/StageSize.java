@@ -1,18 +1,18 @@
 package model;
 
 /**
- * Music genre with a human-readable description label.
+ * Stage size category with a human-readable German description label.
  *
  * @author Daniel Appenmaier
  * @version 1.0
  */
-public enum MusicGenre {
+public enum StageSize {
 
-   ROCK("Rock"), POP("Pop"), JAZZ("Jazz"), METAL("Metal"), ELECTRONIC("Electronic");
+   SMALL("Klein"), MEDIUM("Mittel"), LARGE("Groß");
 
    private final String description;
 
-   MusicGenre(String description) {
+   StageSize(String description) {
       this.description = description;
    }
 

@@ -6,6 +6,9 @@ import java.util.Random;
 /**
  * Demonstrates {@link java.util.Optional} as a null-safe alternative to returning {@code null},
  * comparing the classic null-check approach with {@code Optional}-based equivalents.
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
  */
 public class D39_Optionals {
 

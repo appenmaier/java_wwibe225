@@ -6,6 +6,9 @@ import lombok.Data;
 /**
  * Represents a movie with a title, publishing year, and IMDb-style rating. Natural ordering is
  * defined by title (alphabetically ascending).
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
  */
 @Data
 @AllArgsConstructor

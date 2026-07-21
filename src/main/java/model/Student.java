@@ -3,7 +3,12 @@ package model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-/** Represents a student identified by a matriculation number and a name. */
+/**
+ * Represents a student identified by a matriculation number and a name.
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
+ */
 @Data
 @AllArgsConstructor
 public class Student {

@@ -11,6 +11,9 @@ import model.MovieByRatingDescendingComparator;
  * Demonstrates sorting with {@link java.util.Collections#sort} using both natural ordering
  * (via {@link Comparable}) and custom ordering (via {@link java.util.Comparator}) for integers,
  * strings, and custom objects.
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
  */
 public class D35_Comparators {
 

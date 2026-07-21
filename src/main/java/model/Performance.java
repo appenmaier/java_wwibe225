@@ -7,6 +7,9 @@ import lombok.Data;
 /**
  * Represents a musical performance at a festival, with a band name, start time, and genre.
  * Natural ordering is by start time.
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
  */
 @Data // 0,25
 public class Performance // 0,5

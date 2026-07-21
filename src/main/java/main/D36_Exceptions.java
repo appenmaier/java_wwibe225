@@ -13,6 +13,9 @@ import model.TableLight;
  * checked exception. Covers {@link ArrayIndexOutOfBoundsException},
  * {@link NullPointerException}, {@link java.util.InputMismatchException},
  * and {@link model.AlreadyPluggedInException}.
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
  */
 public class D36_Exceptions {
 

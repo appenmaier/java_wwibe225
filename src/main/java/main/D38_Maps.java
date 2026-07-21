@@ -11,6 +11,9 @@ import model.Student;
 /**
  * Demonstrates {@link java.util.HashMap} operations: putting, reading, checking, overriding
  * entries, and iterating via key set, value collection, entry set, and {@code forEach}.
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
  */
 public class D38_Maps {
 

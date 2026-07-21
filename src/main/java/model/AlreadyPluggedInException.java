@@ -2,6 +2,9 @@ package model;
 
 /**
  * Checked exception thrown when a {@link WiredDevice} is plugged in while already connected.
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
  */
 public class AlreadyPluggedInException extends Exception {
 

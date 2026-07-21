@@ -11,6 +11,9 @@ import model.Movie;
 /**
  * Demonstrates local classes, anonymous classes, lambda expressions, and method references for
  * sorting and iterating a list of movies.
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
  */
 public class D37_InnerClasses {
 

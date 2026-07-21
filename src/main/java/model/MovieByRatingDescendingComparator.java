@@ -4,6 +4,9 @@ import java.util.Comparator;
 
 /**
  * Compares two {@link Movie} objects by rating in descending order (highest rating first).
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
  */
 public class MovieByRatingDescendingComparator implements Comparator<Movie> {
 
