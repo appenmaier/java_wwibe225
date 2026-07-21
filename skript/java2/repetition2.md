@@ -1,6 +1,6 @@
 # Wiederholung: Termin 2 - 4
 
-**Aufgabe 1**
+**Beispielklausuraufgabe A1**
 
 Erstelle die Klasse `Performance` anhand des abgebildeten Klassendiagramms (4 Punkte).
 
@@ -35,7 +35,7 @@ _Hinweis_
 
 Die Methode `int compareTo(other: Performance)` soll so implementiert werden, dass Auftritte aufsteigend nach ihrer Startzeit sortiert werden können (2 Punkte).
 
-**Aufgabe 2**
+**Beispielklausuraufgabe A2**
 
 Erstelle die Klasse `Festival` anhand des abgebildeten Klassendiagramms (11,5 Punkte).
 
@@ -98,4 +98,4 @@ _Hinweise_
 
 **Links**
 
-_folgt_
+[Solution: ExamTaskA](../../src/main/java/main/X03_ExamTaskA.java)
