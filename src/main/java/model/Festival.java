@@ -74,4 +74,4 @@ public record Festival(String name, Map<Performance, Stage> schedule) { // 1
       return performances; // 0,5
    } // 4,5
 
-}
+} // 15,5
