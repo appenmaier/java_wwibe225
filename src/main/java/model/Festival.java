@@ -39,7 +39,7 @@ public record Festival(String name, Map<Performance, Stage> schedule) { // 1
     * @return an {@link Optional} containing the stage, or empty if no matching band is found
     */
    public Optional<Stage> getStageByBandName(String bandName) { // 0,5
-      Optional<Stage> stage = Optional.empty(); // 1
+      Optional<Stage> stage = Optional.empty(); // 0,5
 
       for (Entry<Performance, Stage> entry : schedule.entrySet()) { // 1
          Performance p = entry.getKey(); // 0,5
@@ -52,7 +52,7 @@ public record Festival(String name, Map<Performance, Stage> schedule) { // 1
       }
 
       return stage; // 0,5
-   } // 6
+   } // 5,5
 
    /**
     * Returns all performances of the given genre, sorted by start time.
