@@ -1,8 +1,11 @@
 package main;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.OptionalDouble;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 import model.Movies;
 import model.Movies.Genre;
@@ -66,9 +69,57 @@ public class D40_JavaStreamApi {
 
       /* map, sorted, toList */
       System.out.println("Alle Jahre als sortierte Liste zurückgeben.");
-      List<String> allYears = allYears();
-      allYears.forEach(System.out::println);
+      List<String> allYearsSorted = getAllYearsSorted();
+      allYearsSorted.forEach(System.out::println);
       System.out.println();
+      allYearsSorted.reversed().forEach(System.out::println);
+      System.out.println();
+
+      /* flatMap, distinct, forEach */
+      System.out.println("Alle Genres ausgeben.");
+      printGenres();
+      System.out.println();
+
+      /* collect, Collectors.toSet/Collectors.toList */
+      System.out.println("Alle Filme als Liste zurückgeben.");
+      Set<Movie> allMovies = getAllMovies();
+      allMovies.forEach(System.out::println);
+      System.out.println();
+
+      /* map, collect, Collectors.joining */
+      System.out.println("Alle Filmtitel als kommaseparierte Zeichenkette zurückgeben.");
+      String titles = getTitles();
+      System.out.println(titles);
+      System.out.println();
+
+      /* collect, Collectors.partitioningBy */
+      System.out.println("Filme partioniert nach Bewertung >= 7 zurückgeben.");
+      Map<Boolean, List<Movie>> moviesPartitionedByRating = getMoviesPartitionedByRating();
+      moviesPartitionedByRating
+            .forEach((partition, movies) -> System.out.println(partition + ": " + movies));
+      System.out.println();
+
+      /* collect, Collectors.groupingBy */
+      System.out.println("Alle Filme gruppiert nach Jahr ausgeben.");
+      printAllMoviesByYear();
+
+      /* collect, Collectors.groupingBy, Collectors.mapping, Collectors.toList/Collectors.joining */
+      System.out.println("Alle Filmtitel gruppiert nach Jahr ausgeben.");
+      printAllTitlesByYear();
+
+      /* collect, Collectors.toMap */
+      System.out.println("Anzahl der Genres je Titel zurückgeben.");
+      Map<String, Integer> numberOfGenresByTitle = getNumberOfGenresByTitle();
+      numberOfGenresByTitle.forEach((title, genres) -> System.out.println(title + ": " + genres));
+
+      /*
+       * collect: Collectors.groupingBy,
+       * Collectors.averagingDouble/Collectors.summingDouble/Collectors.counting
+       */
+      System.out.println("Durchschnittliche Laufzeit in Minuten nach Jahr zurückgeben.");
+      Map<String, Double> averageRunTimeInMinByYear = getAverageRunTimeInMinByYear();
+      averageRunTimeInMinByYear.forEach(
+            (year, averageRuntimeInMin) -> System.out.println(year + ": " + averageRuntimeInMin));
    }
 
    /** Prints all thrillers with a rating of at least 7.0 in the format "Title (Year)". */
@@ -143,12 +194,86 @@ public class D40_JavaStreamApi {
     *
     * @return a sorted list of year strings
     */
-   private static List<String> allYears() {
+   private static List<String> getAllYearsSorted() {
       return movies.stream()
             .map(m -> m.year()) // .map(Movie::year)
             .distinct()
             .sorted()
             .toList();
+   }
+
+   /** Prints all distinct genres found across all movies. */
+   private static void printGenres() {
+      movies.stream().flatMap(m -> m.genres().stream()).distinct().forEach(System.out::println);
+   }
+
+   /**
+    * Returns all movies as a {@link Set}.
+    *
+    * @return a set containing all movies
+    */
+   private static Set<Movie> getAllMovies() {
+      return movies.stream().collect(Collectors.toSet());
+   }
+
+   /**
+    * Returns all movie titles joined as a comma-separated string.
+    *
+    * @return a comma-separated string of movie titles
+    */
+   private static String getTitles() {
+      return movies.stream().map(Movie::title).collect(Collectors.joining(", "));
+   }
+
+   /**
+    * Partitions all movies into two groups based on whether their rating is at least 7.0.
+    *
+    * @return a map with {@code true} mapped to movies with rating &ge; 7.0 and {@code false} to the
+    *         rest
+    */
+   private static Map<Boolean, List<Movie>> getMoviesPartitionedByRating() {
+      return movies.stream().collect(Collectors.partitioningBy(m -> m.rating() >= 7));
+   }
+
+   /** Prints all movies grouped by release year. */
+   private static void printAllMoviesByYear() {
+      Map<String, List<Movie>> allMoviesByYear =
+            movies.stream().collect(Collectors.groupingBy(Movie::year));
+
+      allMoviesByYear.forEach((year, movies) -> System.out.println(year + ": " + movies));
+   }
+
+   /** Prints all movie titles grouped by release year, both as a list and as a joined string. */
+   private static void printAllTitlesByYear() {
+      Map<String, List<String>> allTitlesByYearAsList = movies.stream()
+            .collect(Collectors.groupingBy(m -> m.year(),
+                  Collectors.mapping(m -> m.title(), Collectors.toList())));
+      allTitlesByYearAsList.forEach((year, titles) -> System.out.println(year + ": " + titles));
+
+      Map<String, String> allTitlesByYearAsString = movies.stream()
+            .collect(Collectors.groupingBy(m -> m.year(),
+                  Collectors.mapping(Movie::title, Collectors.joining(", "))));
+      allTitlesByYearAsString.forEach((year, titles) -> System.out.println(year + ": " + titles));
+   }
+
+   /**
+    * Returns a map from each movie title to its number of genres.
+    *
+    * @return a map with movie titles as keys and genre counts as values
+    */
+   private static Map<String, Integer> getNumberOfGenresByTitle() {
+      return movies.stream().collect(Collectors.toMap(Movie::title, m -> m.genres().size()));
+   }
+
+   /**
+    * Returns the average runtime in minutes grouped by release year.
+    *
+    * @return a map with release years as keys and average runtimes as values
+    */
+   private static Map<String, Double> getAverageRunTimeInMinByYear() {
+      return movies.stream()
+            .collect(Collectors.groupingBy(Movie::year,
+                  Collectors.averagingDouble(Movie::runtimeInMinutes)));
    }
 
 }
