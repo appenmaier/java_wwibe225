@@ -29,8 +29,6 @@
 
 - [Musterklausur Programmierung II.pdf](static/robotfactory_exam.pdf)
 - [Musterlösung zur Musterklausur Programmierung II.pdf](static/robotfactory_solution.pdf)
-- [Vorbereitungsklausur Programmierung II.pdf](static/festival_exam.pdf)
-- [Musterlösung zur Vorbereitungsklausur Programmierung II.pdf](static/festival_solution.pdf)
 - [Cheatsheet Programmierung II.pdf](static/cheatsheet.pdf)
 
 ## Klausurergebnisse
