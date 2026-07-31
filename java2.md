@@ -22,8 +22,7 @@
   - [Die Java Stream API](skript/java2/java-stream-api.md)
 - Termin 8, 31.07.2026
   - [Wiederholung: Termin 6 - 7](skript/java2/repetition3.md)
-  - Softwaretests
-  - Komponententests (Unit Tests)
+  - [Softwaretests](skript/java2/tests.md)
 - Termin 9, 08.09.2026
   - Komponententests (Unit Tests)
   - Mockito
