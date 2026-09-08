@@ -24,8 +24,8 @@
   - [Wiederholung: Termin 6 - 7](skript/java2/repetition3.md)
   - [Softwaretests](skript/java2/tests.md)
 - Termin 9, 08.09.2026
-  - Komponententests (Unit Tests)
-  - Mockito
+  - [Komponententests (Unit Tests)](skript/java2/unit-tests.md)
+  - [Mockito](skript/java2/mockito.md)
 - Termin 10, 11.09.2026
   - Klausurvorbereitung
 
