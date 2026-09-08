@@ -13,6 +13,12 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
+/**
+ * Unit tests for {@link Crate}.
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
+ */
 public class CrateTest {
 
    private Crate crate;
@@ -29,12 +35,14 @@ public class CrateTest {
    @Mock
    private Body body;
 
+   /** Sets up a fresh empty crate and initializes Mockito mocks before each test. */
    @BeforeEach
    void setUp() {
       MockitoAnnotations.openMocks(this);
       crate = new Crate(new ArrayList<>());
    }
 
+   /** Tests that bodies are added correctly and that {@code null} throws {@link NullPointerException}. */
    @Test
    void testAddBody() {
       crate.addBody(sphere3);
@@ -48,6 +56,7 @@ public class CrateTest {
       assertThrows(NullPointerException.class, () -> crate.addBody(null)); // assertDoesNotThrow
    }
 
+   /** Tests that the body with the highest volume is returned when the crate is non-empty. */
    @Test
    void testGetBodyWithHighestVolume() {
       crate.addBody(sphere3);
@@ -61,11 +70,13 @@ public class CrateTest {
       assertEquals(Optional.of(sphere4), crate.getBodyWithHighestVolume());
    }
 
+   /** Tests that an empty {@link java.util.Optional} is returned when the crate is empty. */
    @Test
    void testGetBodyWithHighestVolume2() {
       assertEquals(Optional.empty(), crate.getBodyWithHighestVolume());
    }
 
+   /** Tests that only {@link Sphere} instances are returned from a mixed-type crate. */
    @Test
    void testGetSpheres() {
       crate.addBody(sphere2);
@@ -76,6 +87,7 @@ public class CrateTest {
       assertEquals(3, crate.getSpheres().size()); // assertTrue(crate.getSpheres().size() == 3);
    }
 
+   /** Tests that an empty list is returned when the crate contains no spheres. */
    @Test
    void testGetSpheres2() {
       assertEquals(0, crate.getSpheres().size());
