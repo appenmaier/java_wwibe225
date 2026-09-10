@@ -16,6 +16,9 @@
 /bin/
 /target/
 
+# Ignore DLC
+/static/
+
 # Ignore CLAUDE
 /CLAUDE.md
 /.claude
